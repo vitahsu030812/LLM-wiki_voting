@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 員林選民手冊</title>
+<!-- 由 slides/work/build_slides.pl 依 spec.md 自動產生，請勿手改 -->
+<style>
+:root{
+  --sky:#BEDEFF; --butter:#FFF2A7; --orange:#FFA500; --wine:#930031;
+  --ink:#2b1a20; --ink2:#6b5a5f; --paper:#fffdf6; --hair:#e6dccb; --track:#f3ecdc; --bg:#efe6d6; --white:#ffffff;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU","MingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{width:1280px;height:720px;position:relative;transform-origin:center center}
+.slide{position:absolute;inset:0;background:var(--paper);border:1px solid var(--hair);padding:28px 56px 44px;display:none;flex-direction:column;overflow:hidden}
+.slide.active{display:flex}
+.mast{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;letter-spacing:.18em;color:var(--ink2);border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:12px}
+.mast b{color:var(--wine);letter-spacing:.24em}
+.folio{position:absolute;bottom:12px;left:56px;right:56px;display:flex;justify-content:space-between;gap:20px;font-size:11.5px;color:var(--ink2);border-top:1px solid var(--hair);padding-top:6px}
+.folio .pg{font-family:var(--serif);font-weight:700;color:var(--wine);font-size:14px}
+.sec{align-self:flex-start;background:var(--wine);color:var(--white);font-size:12.5px;font-weight:700;letter-spacing:.12em;padding:3px 10px;margin-bottom:6px}
+h2{font-family:var(--serif);font-size:34px;line-height:1.2;margin:0 0 14px;font-weight:900}
+.spread{flex:1;min-height:0;display:grid;grid-template-columns:6fr 4fr}
+.fig{border-right:1px solid var(--ink);padding:0 24px 0 0;display:flex;flex-direction:column;min-height:0;min-width:0}
+.txt{padding:0 0 0 24px;display:flex;flex-direction:column;min-height:0;min-width:0}
+.figcap{font-size:12px;color:var(--ink2);margin-top:8px;font-family:var(--serif)}
+ul.pts{list-style:none;margin:0;padding:0}
+ul.pts>li{position:relative;padding:7px 0 7px 22px;border-bottom:1px solid var(--hair);font-size:15.5px;line-height:1.5}
+ul.pts>li:before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;background:var(--orange)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);margin-bottom:10px;align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px}
+.kicknum{font-family:var(--serif);font-size:54px;font-weight:900;color:var(--wine);line-height:1}
+.stat{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:10px}
+.stat .lab{font-size:14px;color:var(--ink2)}
+/* hbar */
+.hb{display:flex;flex-direction:column;gap:5px}
+.hb .r{display:grid;grid-template-columns:110px 1fr 140px;align-items:center;gap:10px;font-size:14px}
+.hb .tr{height:18px;background:var(--track);position:relative}
+.hb .tr.tall{height:30px}
+.hb .f{position:absolute;left:0;top:0;bottom:0;background:var(--sky)}
+.hb .r.hi .f{background:var(--wine)}
+.hb .r.hi .l{font-weight:800;color:var(--wine)}
+.hb .v{font-variant-numeric:tabular-nums;color:var(--ink2);font-size:13px;white-space:nowrap}
+.sub{margin-top:16px;border-top:1px solid var(--hair);padding-top:10px}
+/* column */
+.vc{flex:1;display:flex;align-items:flex-end;gap:20px;border-bottom:2px solid var(--ink);padding:0 8px;min-height:0;margin-bottom:30px}
+.gc{margin-bottom:30px}
+.vc .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative;padding-bottom:26px}
+.vc .bar{width:100%;background:var(--sky)} .vc .bar.hi{background:var(--wine)}
+.vc .num{font-family:var(--serif);font-size:28px;font-weight:900;margin-bottom:4px}
+.vc .cl{position:absolute;bottom:-24px;font-size:14px;font-weight:700;white-space:nowrap}
+/* grouped */
+.gc{flex:1;display:flex;gap:26px;border-bottom:2px solid var(--ink);padding:0 10px;min-height:0}
+.gc .g{flex:1;display:flex;flex-direction:column;justify-content:flex-end;position:relative;padding-bottom:26px}
+.gc .gb{flex:1;display:flex;align-items:flex-end;gap:5px}
+.gc .b{flex:1;position:relative;display:flex;justify-content:center}
+.gc .b span{position:absolute;top:-22px;font-family:var(--serif);font-weight:900;font-size:17px}
+.gc .gl{position:absolute;bottom:-24px;left:0;right:0;text-align:center;font-size:14px;font-weight:700}
+/* donut */
+.donutrow{display:flex;align-items:center;gap:28px;flex:1}
+.donut{width:260px;height:260px;border-radius:50%;position:relative;flex:none}
+.donut:after{content:"";position:absolute;inset:60px;border-radius:50%;background:var(--paper)}
+.donut .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;font-family:var(--serif)}
+.donut .c b{font-size:30px;color:var(--wine)} .donut .c span{font-size:13px;color:var(--ink2)}
+.dleg{flex:1;display:flex;flex-direction:column;gap:10px}
+.dl{display:grid;grid-template-columns:16px 70px 1fr 70px;align-items:center;gap:8px;font-size:15px;border-bottom:1px solid var(--hair);padding-bottom:6px}
+.dl i{width:14px;height:14px;display:inline-block} .dl .pc{font-family:var(--serif);font-weight:900;color:var(--wine)}
+/* stacked */
+.stk{display:flex;height:56px;border:2px solid var(--ink);margin-top:10px}
+.stk div{display:flex;align-items:center;padding-left:10px;font-weight:700;white-space:nowrap;overflow:hidden}
+.stk .dk{color:var(--white)}
+/* matrix */
+table.mx{border-collapse:collapse;width:100%;font-size:14px}
+table.mx th{font-size:12.5px;color:var(--ink2);padding:6px 4px;border-bottom:2px solid var(--ink);text-align:center}
+table.mx td{border-bottom:1px solid var(--hair);padding:9px 4px;text-align:center}
+table.mx td:first-child{text-align:left;font-family:var(--serif);font-size:18px;font-weight:900}
+.dot,.ring,.tri,.dash{display:inline-block}
+.dot{width:18px;height:18px;border-radius:50%;background:var(--wine)}
+.ring{width:18px;height:18px;border-radius:50%;border:3px solid var(--wine)}
+.tri{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:17px solid var(--orange)}
+.dash{width:16px;height:3px;background:var(--hair);vertical-align:middle}
+.legend .dot,.legend .ring{width:12px;height:12px} .legend .ring{border-width:2px}
+.legend .tri{border-left-width:7px;border-right-width:7px;border-bottom-width:12px;width:0;height:0}
+/* timeline */
+.tl{display:grid;border-top:2px solid var(--ink)}
+.tl>div{border-bottom:1px solid var(--hair);padding:12px 6px;font-size:13.5px;display:flex;align-items:center}
+.tl .yr{font-family:var(--serif);font-weight:900;font-size:17px;justify-content:center;border-bottom:2px solid var(--ink);color:var(--wine)}
+.tl .yr.hd{justify-content:flex-start;color:var(--ink)}
+.tl .nm{font-family:var(--serif);font-weight:900;font-size:20px}
+.chip{padding:6px 8px;width:100%} .chip.w{background:var(--sky)} .chip.now{background:var(--butter);border:2px solid var(--orange);font-weight:700} .chip.none{color:var(--ink2)}
+/* units */
+.units{display:grid;gap:12px}
+.ugrp{display:flex;flex-direction:column;gap:6px}
+.ugrp h4{margin:0;font-size:14px;border-bottom:2px solid var(--ink);padding-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.ugrp h4 b{font-family:var(--serif);font-size:24px;line-height:1}
+.u{padding:8px;font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.u.dk{color:var(--white)} .u .nb{font-family:var(--serif);font-size:12.5px}
+/* directory */
+.dir{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.dir h3{font-family:var(--serif);font-size:21px;margin:0;border-bottom:2px solid var(--ink);padding-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.dir h3 small{font-family:var(--sans);font-size:12px;font-weight:400;color:var(--ink2)}
+.dir ol{list-style:none;margin:0;padding:0}
+.dir li{display:grid;grid-template-columns:28px 70px 1fr;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--hair);font-size:13.5px}
+.dir li .n{font-family:var(--serif);font-weight:900;color:var(--wine);font-size:16px}
+.dir li b{font-size:15.5px}
+.tg{font-size:11.5px;padding:1px 6px;font-weight:700;white-space:nowrap}
+.tg.inc{background:var(--wine);color:var(--white)} .tg.re{background:var(--orange)} .tg.up{background:var(--sky)} .tg.new{background:var(--butter)}
+/* li chart */
+.lic{display:flex;flex-direction:column}
+.lic .r{display:grid;grid-template-columns:58px 1fr 210px;gap:10px;align-items:center;padding:4px 0;border-bottom:1px solid var(--hair);font-size:13px}
+.lic .r.hd{font-size:11.5px;color:var(--ink2);border-bottom:2px solid var(--ink)}
+.lic .l{font-family:var(--serif);font-weight:900;font-size:15px}
+.lic .tr{height:20px;background:var(--track);position:relative}
+.lic .f{position:absolute;inset:0 auto 0 0;background:var(--sky)}
+.lic .f.out{background:var(--orange)}
+.lic .f.unc,.hatch{background:repeating-linear-gradient(45deg,var(--sky),var(--sky) 5px,var(--white) 5px,var(--white) 10px)}
+.hatch{display:inline-block;width:12px;height:12px}
+.lic .p{position:absolute;left:6px;top:2px;font-size:11.5px;color:var(--ink)}
+.lic .cand{font-size:12.5px;line-height:1.35}
+/* svg graphs */
+svg.net{width:100%;height:auto;max-height:100%;font-family:var(--sans)}
+svg .edge{fill:none;stroke:var(--orange);stroke-linecap:round}
+svg .edge.thin{stroke-width:3}
+svg .elab{font-family:var(--serif);font-weight:900;font-size:16px;fill:var(--wine);paint-order:stroke;stroke:var(--paper);stroke-width:5px}
+svg .n1{fill:var(--wine)} svg .n1t{fill:var(--white);font-size:14px;font-weight:700}
+svg .n2{fill:var(--sky)} svg .n2t{fill:var(--ink);font-size:15px;font-weight:700}
+svg .box{fill:var(--white);stroke:var(--ink);stroke-width:1}
+svg .bn{fill:var(--ink);font-size:13.5px;font-weight:700} svg .bs{fill:var(--ink2);font-size:11.5px}
+svg .hub{fill:var(--butter);stroke:var(--orange);stroke-width:3} svg .hubt{fill:var(--wine);font-size:17px;font-weight:900;font-family:var(--serif)}
+svg .colh{fill:var(--wine);font-size:14px;font-weight:700;letter-spacing:.1em}
+svg .e-wine{stroke:var(--wine);opacity:.8} svg .e-orange{stroke:var(--orange)} svg .e-sky{stroke:var(--sky)}
+svg .t-wine{fill:var(--wine)} svg .t-orange{fill:var(--orange)} svg .t-sky{fill:var(--sky);stroke:var(--ink);stroke-width:.5}
+svg .tt-wine{fill:var(--white);font-size:14px;font-weight:700} svg .tt-orange,svg .tt-sky{fill:var(--ink);font-size:14px;font-weight:700}
+/* checklist */
+.ck{display:grid;grid-template-rows:repeat(3,1fr);gap:12px;flex:1}
+.ck>div{display:grid;grid-template-columns:100px 1fr;align-items:center}
+.ck .kicknum{text-align:center}
+.ck b{display:block;font-family:var(--serif);font-size:24px} .ck small{font-size:14px;color:var(--ink2)}
+/* cover */
+.cover{background:var(--sky)}
+.cover .bigt{font-family:var(--serif);font-weight:900;font-size:112px;line-height:.95;color:var(--wine);margin:10px 0 6px}
+.cover .bigt span{display:block;font-size:50px;line-height:1.2;color:var(--ink);margin-top:36px}
+.cover .ribbon{align-self:flex-start;background:var(--wine);color:var(--white);font-family:var(--serif);font-size:26px;font-weight:900;padding:10px 20px;margin-top:14px}
+.cover .claim{font-family:var(--serif);font-size:18px;max-width:640px;margin:18px 0 0}
+.cover .lines{position:absolute;right:56px;top:96px;width:340px;background:var(--paper);padding:18px 22px;border-top:8px solid var(--orange)}
+.cover .lines h5{margin:0 0 6px;font-size:12px;letter-spacing:.2em;color:var(--wine)}
+.cover .ln{font-family:var(--serif);font-size:18px;font-weight:700;padding:8px 0;border-bottom:1px solid var(--hair);display:flex;gap:12px;align-items:baseline}
+.cover .ln i{font-style:normal;font-size:26px;color:var(--wine);font-weight:900;min-width:44px}
+.cover .ln:first-of-type i{font-size:16px}
+.cover .fine{position:absolute;left:56px;bottom:46px;margin:0;padding:0;list-style:none;font-size:13px;line-height:1.7}
+/* nav */
+#nav{position:fixed;bottom:14px;right:18px;display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink2);z-index:5}
+#nav button{font:inherit;border:1px solid var(--wine);background:var(--paper);color:var(--wine);padding:6px 12px;cursor:pointer}
+#nav button:hover{background:var(--butter)}
+#progress{position:fixed;top:0;left:0;height:4px;background:var(--orange);z-index:5}
+#toc{position:fixed;top:12px;left:16px;z-index:5}
+#toc select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--wine);background:var(--paper);color:var(--ink);max-width:260px}
+@media (max-width:820px){
+  body{overflow:auto}
+  #stage{position:static;display:block;padding:12px 16px 40px}
+  #deck{width:auto;height:auto;transform:none!important}
+  .slide{position:relative;display:flex!important;padding:20px 16px 16px;margin-bottom:16px}
+  h2{font-size:24px}
+  .spread{grid-template-columns:1fr;gap:18px}
+  .fig{border:none;padding:0} .txt{padding:0}
+  .units{grid-template-columns:1fr 1fr!important}
+  .dir{grid-template-columns:1fr}
+  .hb .r{grid-template-columns:70px 1fr 100px;font-size:12.5px}
+  .lic .r{grid-template-columns:48px 1fr} .lic .cand{grid-column:1/-1}
+  .donutrow{flex-direction:column;align-items:stretch} .donut{width:200px;height:200px;margin:0 auto} .donut:after{inset:46px}
+  .tl>div{font-size:11.5px;padding:6px 3px} .tl .nm{font-size:15px}
+  .vc{min-height:220px;gap:8px;padding:0 2px} .gc{min-height:220px;gap:10px}
+  .vc .cl{white-space:normal;font-size:11px;text-align:center;width:100%;bottom:-30px;line-height:1.2}
+  .vc .num{font-size:20px}
+  .ck{grid-template-rows:none;flex:none} .ck>div{grid-template-columns:64px 1fr;padding:12px 8px} .ck .kicknum{font-size:36px} .ck b{font-size:18px}
+  .cover .bigt{font-size:60px} .cover .bigt span{font-size:28px}
+  .cover .lines,.cover .fine{position:static;width:auto;margin-top:16px}
+  .folio{position:static;margin-top:16px;flex-direction:column}
+  #nav,#progress,#toc{display:none}
+}
+@media print{
+  @page{size:1280px 720px;margin:0}
+  body{background:var(--white);overflow:visible;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  #stage{position:static;display:block} #deck{transform:none!important;height:auto}
+  .slide{display:flex!important;position:relative;width:1280px;height:720px;break-after:page}
+  #nav,#progress,#toc{display:none}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="toc"><select id="tocSel" aria-label="跳至投影片"></select></div>
+<div id="stage"><div id="deck">
+<section class="slide cover" data-id="S01" data-title="封面">
+  <div class="mast"><b>員林選舉特刊</b><span>開場</span><span>S01</span></div>
+  <div class="bigt">選前<br>必讀<span>2026 員林市地方選舉</span></div>
+  <div class="ribbon">投票日 2026-11-28</div>
+  <p class="claim">一份依號次排列、只陳述公開資料的 2026 員林選前參考</p>
+  <div class="lines"><h5>本期內容</h5><div class="ln"><i>4</i>縣長候選人</div><div class="ln"><i>3</i>市長候選人</div><div class="ln"><i>13</i>縣議員候選人</div><div class="ln"><i>32</i>市民代表候選人</div><div class="ln"><i>23</i>十大里里長候選人</div><div class="ln"><i>3</i>議題專題</div></div>
+  <ul class="fine"><li>候選人一律依號次排列</li><li>只陳述公開資料，不代表支持任何候選人</li><li>資料截至 2026-11-15，以中選會公告為準</li></ul>
+  <div class="folio"><span>資料來源：中選會 2026 選舉資訊（info.cec.gov.tw/vote2026）</span><span class="pg">01</span></div>
+</section>
+<section class="slide" data-id="S02" data-title="五張選票">
+  <div class="mast"><b>開場</b><span>員林選舉特刊</span><span>S02</span></div>
+  <span class="sec">五張選票</span>
+  <h2>員林市民一次投 5 張票，本刊收錄 75 位候選人</h2>
+  <div class="spread">
+    <div class="fig"><div class="stat"><span class="kicknum">75</span><span class="lab">合計</span></div><div class="vc"><div class="col"><span class="num">4</span><div class="bar" style="height:9.8%"></div><span class="cl">縣長</span></div><div class="col"><span class="num">13</span><div class="bar" style="height:31.7%"></div><span class="cl">縣議員</span></div><div class="col"><span class="num">3</span><div class="bar" style="height:7.3%"></div><span class="cl">市長</span></div><div class="col"><span class="num">32</span><div class="bar hi" style="height:78.0%"></div><span class="cl">市民代表</span></div><div class="col"><span class="num">23</span><div class="bar" style="height:56.1%"></div><span class="cl">里長（十大里）</span></div></div><div class="figcap">里長僅計前十大人口里；市民代表為第 1～4 選區合計</div></div>
+    <div class="txt"><ul class="pts"><li>縣長：全彰化縣選 1 人</li><li>縣議員：第 04 選區（員林市＋大村鄉＋永靖鄉），13 人選 9 席</li><li>市長：員林全市選 1 人（第四屆）</li><li>市民代表：依戶籍所在選區（第 1～4 區）</li><li>里長：依戶籍所在里，全市 41 里</li><li>投票請帶身分證、印章及投票通知單</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會 2026 候選人公告</span><span class="pg">02</span></div>
+</section>
+<section class="slide" data-id="S03" data-title="員林市基本資料">
+  <div class="mast"><b>開場</b><span>員林選舉特刊</span><span>S03</span></div>
+  <span class="sec">員林市基本資料</span>
+  <h2>員林是 41 里、約 12.2 萬人的彰化第二大城</h2>
+  <div class="spread">
+    <div class="fig"><div class="hb"><div class="r hi"><span class="l">三和里</span><span class="tr"><span class="f" style="width:100.0%"></span></span><span class="v">7,888</span></div><div class="r "><span class="l">南平里</span><span class="tr"><span class="f" style="width:95.7%"></span></span><span class="v">7,546</span></div><div class="r "><span class="l">惠來里</span><span class="tr"><span class="f" style="width:81.4%"></span></span><span class="v">6,422</span></div><div class="r "><span class="l">南興里</span><span class="tr"><span class="f" style="width:74.5%"></span></span><span class="v">5,876</span></div><div class="r "><span class="l">新生里</span><span class="tr"><span class="f" style="width:60.0%"></span></span><span class="v">4,733</span></div><div class="r "><span class="l">萬年里</span><span class="tr"><span class="f" style="width:59.7%"></span></span><span class="v">4,710</span></div><div class="r "><span class="l">三多里</span><span class="tr"><span class="f" style="width:51.9%"></span></span><span class="v">4,093</span></div><div class="r "><span class="l">大饒里</span><span class="tr"><span class="f" style="width:48.2%"></span></span><span class="v">3,800</span></div><div class="r "><span class="l">三愛里</span><span class="tr"><span class="f" style="width:47.1%"></span></span><span class="v">3,712</span></div><div class="r "><span class="l">三橋里</span><span class="tr"><span class="f" style="width:46.3%"></span></span><span class="v">3,650</span></div></div><div class="figcap">前十大人口里人口數（人），依人口排序</div></div>
+    <div class="txt"><ul class="pts"><li>總人口 122,148 人（2025 年）</li><li>全市 41 里</li><li>彰化縣人口第二大城市</li><li>縣議員與大村鄉、永靖鄉同屬第 04 選區</li><li>本刊追蹤前十大人口里的里長選舉</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：員林戶政事務所人口統計（2025）</span><span class="pg">03</span></div>
+</section>
+<section class="slide" data-id="S04" data-title="候選人與議題關係圖">
+  <div class="mast"><b>開場</b><span>員林選舉特刊</span><span>S04</span></div>
+  <span class="sec">候選人與議題關係圖</span>
+  <h2>三個議題各自牽動哪些層級的候選人</h2>
+  <div class="spread">
+    <div class="fig"><svg viewBox="0 0 640 430" class="net" role="img" aria-label="議題與選舉層級關係圖"><path d="M230 40 C330 40 340 30 430 30" class="edge e-wine" style="stroke-width:7.6"/><path d="M230 40 C330 40 340 215 430 215" class="edge e-wine" style="stroke-width:3.4"/><path d="M230 40 C330 40 340 307 430 307" class="edge e-wine" style="stroke-width:6.2"/><path d="M230 40 C330 40 340 400 430 400" class="edge e-wine" style="stroke-width:7.6"/><path d="M230 215 C330 215 340 30 430 30" class="edge e-orange" style="stroke-width:7.6"/><path d="M230 215 C330 215 340 307 430 307" class="edge e-orange" style="stroke-width:7.6"/><path d="M230 215 C330 215 340 400 430 400" class="edge e-orange" style="stroke-width:3.4"/><path d="M230 390 C330 390 340 122 430 122" class="edge e-sky" style="stroke-width:3.4"/><path d="M230 390 C330 390 340 215 430 215" class="edge e-sky" style="stroke-width:4.8"/><path d="M230 390 C330 390 340 307 430 307" class="edge e-sky" style="stroke-width:16.0"/><path d="M230 390 C330 390 340 400 430 400" class="edge e-sky" style="stroke-width:3.4"/><rect x="0" y="20" width="230" height="40" class="t-wine"/><text x="115" y="46" class="tt-wine" text-anchor="middle">長者健保免費與社福</text><rect x="0" y="195" width="230" height="40" class="t-orange"/><text x="115" y="221" class="tt-orange" text-anchor="middle">跨縣市月票與公共運輸</text><rect x="0" y="370" width="230" height="40" class="t-sky"/><text x="115" y="396" class="tt-sky" text-anchor="middle">員林排水與淹水改善</text><rect x="430" y="8" width="210" height="44" class="box"/><text x="442" y="36" class="n2t" text-anchor="start">縣長</text><rect x="520" y="17" width="34" height="26" class="t-wine"/><text x="537" y="36" class="tt-wine" text-anchor="middle">4</text><rect x="558" y="17" width="34" height="26" class="t-orange"/><text x="575" y="36" class="tt-orange" text-anchor="middle">4</text><rect x="430" y="100" width="210" height="44" class="box"/><text x="442" y="128" class="n2t" text-anchor="start">市長</text><rect x="520" y="109" width="34" height="26" class="t-sky"/><text x="537" y="128" class="tt-sky" text-anchor="middle">1</text><rect x="430" y="193" width="210" height="44" class="box"/><text x="442" y="221" class="n2t" text-anchor="start">縣議員</text><rect x="520" y="202" width="34" height="26" class="t-wine"/><text x="537" y="221" class="tt-wine" text-anchor="middle">1</text><rect x="558" y="202" width="34" height="26" class="t-sky"/><text x="575" y="221" class="tt-sky" text-anchor="middle">2</text><rect x="430" y="285" width="210" height="44" class="box"/><text x="442" y="313" class="n2t" text-anchor="start">市民代表</text><rect x="520" y="294" width="34" height="26" class="t-wine"/><text x="537" y="313" class="tt-wine" text-anchor="middle">3</text><rect x="558" y="294" width="34" height="26" class="t-orange"/><text x="575" y="313" class="tt-orange" text-anchor="middle">4</text><rect x="596" y="294" width="34" height="26" class="t-sky"/><text x="613" y="313" class="tt-sky" text-anchor="middle">10</text><rect x="430" y="378" width="210" height="44" class="box"/><text x="442" y="406" class="n2t" text-anchor="start">里長</text><rect x="520" y="387" width="34" height="26" class="t-wine"/><text x="537" y="406" class="tt-wine" text-anchor="middle">4</text><rect x="558" y="387" width="34" height="26" class="t-orange"/><text x="575" y="406" class="tt-orange" text-anchor="middle">1</text><rect x="596" y="387" width="34" height="26" class="t-sky"/><text x="613" y="406" class="tt-sky" text-anchor="middle">1</text></svg><div class="figcap">線條粗細＝該層級中與此議題有實質連結的候選人數；依 wiki 頁面連結繪製</div></div>
+    <div class="txt"><ul class="pts"><li>長者議題：4 位縣長候選人都有相關表態</li><li>交通議題：集中在縣長與市民代表層級</li><li>排水議題：以市民代表為主（10 人）</li><li>只表示「有談到」，不代表政見優劣</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：彰化縣員林市選舉知識庫（wiki 頁面連結）</span><span class="pg">04</span></div>
+</section>
+<section class="slide" data-id="S05" data-title="縣長：政見矩陣">
+  <div class="mast"><b>縣長</b><span>員林選舉特刊</span><span>S05</span></div>
+  <span class="sec">縣長：政見矩陣</span>
+  <h2>4 位縣長候選人在 6 類議題上的主張分布</h2>
+  <div class="spread">
+    <div class="fig"><div class="legend"><span><i class="dot"></i>有提出主張</span><span><i class="ring"></i>內容待查</span><span><i class="tri"></i>表態保留</span><span><i class="dash"></i>報導中未見</span></div><table class="mx"><tr><th></th><th>月票交通</th><th>長者健保</th><th>長照照顧</th><th>教育育兒</th><th>產業文化</th><th>都更住宅</th></tr><tr><td>陳素月</td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr><tr><td>魏平政</td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr><tr><td>邱建富</td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="ring" title="已提出但內容待查"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr><tr><td>陳重嘉</td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="tri" title="表態保留"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td></tr></table><div class="figcap">● 有提出主張　○ 已提出但內容待查　△ 表態保留　— 公開報導中未見（不代表反對）</div></div>
+    <div class="txt"><ul class="pts"><li>1 陳素月｜現任立法委員｜TPASS 699 元、一校一保全</li><li>2 魏平政｜律師｜「打造台灣第七都」、代收代辦費全額補助</li><li>3 邱建富｜前彰化市長｜檢討營養午餐、檢討公車接駁</li><li>4 陳重嘉｜三屆縣議員｜產業升級、老舊巷弄都更</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：報新聞〈彰化縣長政見對照〉2026-11-03；中央社 2026-08-31、10-01；ETtoday 2026-06-16；聯合報；自由時報</span><span class="pg">05</span></div>
+</section>
+<section class="slide" data-id="S06" data-title="回顧：2022 縣長員林票">
+  <div class="mast"><b>縣長</b><span>員林選舉特刊</span><span>S06</span></div>
+  <span class="sec">回顧：2022 縣長員林票</span>
+  <h2>2022 員林縣長票差 7,749 票，2026 為無現任者選局</h2>
+  <div class="spread">
+    <div class="fig"><div class="donutrow"><div class="donut" style="background:conic-gradient(var(--wine) 0.00% 55.70%,var(--orange) 55.70% 98.61%,var(--sky) 98.61% 100.00%)"><div class="c"><b>60,602</b><span>員林有效票</span></div></div><div class="dleg"><div class="dl"><i style="background:var(--wine)"></i><b>王惠美</b><span>33,753 票</span><span class="pc">55.70%</span></div><div class="dl"><i style="background:var(--orange)"></i><b>黃秀芳</b><span>26,004 票</span><span class="pc">42.91%</span></div><div class="dl"><i style="background:var(--sky)"></i><b>蕭仁正</b><span>845 票</span><span class="pc">1.39%</span></div></div></div><div class="figcap">2022 彰化縣長選舉，員林市開票結果</div></div>
+    <div class="txt"><ul class="pts"><li>王惠美 55.70%、黃秀芳 42.91%、蕭仁正 1.39%</li><li>員林票差 7,749 票</li><li>2026 四位縣長候選人都未參加 2022 縣長選舉</li><li>2026 有 2 位以無黨籍參選</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會選舉及公投資料庫（db.cec.gov.tw）</span><span class="pg">06</span></div>
+</section>
+<section class="slide" data-id="S07" data-title="市長：參政時間軸">
+  <div class="mast"><b>市長</b><span>員林選舉特刊</span><span>S07</span></div>
+  <span class="sec">市長：參政時間軸</span>
+  <h2>市長候選人：里長、縣議員出身各 1 位，1 位參政紀錄待查</h2>
+  <div class="spread">
+    <div class="fig"><div class="tl" style="grid-template-columns:96px repeat(5,1fr)"><div class="yr hd">候選人</div><div class="yr">更早</div><div class="yr">經歷</div><div class="yr">2018</div><div class="yr">2022</div><div class="yr">2026</div><div class="nm">張政岳</div><div><span class="chip none">—</span></div><div><span class="chip none">—</span></div><div><span class="chip w">大明里里長</span></div><div><span class="chip w">同額競選</span></div><div><span class="chip now">登記參選</span></div><div class="nm">張裕國</div><div><span class="chip none">—</span></div><div><span class="chip none">待查</span></div><div><span class="chip none">—</span></div><div><span class="chip none">—</span></div><div><span class="chip now">登記參選</span></div><div class="nm">凃俊任</div><div><span class="chip w">員林鎮民代表</span></div><div><span class="chip none">—</span></div><div><span class="chip w">8,962 票</span></div><div><span class="chip w">13,485 票</span></div><div><span class="chip now">登記參選</span></div></div><div class="figcap">依 wiki 候選人頁「參政經歷」整理；本屆無現任市長參選</div></div>
+    <div class="txt"><ul class="pts"><li>1 張政岳：施政概念「維修城市」、主張「一里一建設」</li><li>1 張政岳：與縣長參選人組「縣市一條心」團隊</li><li>2 張裕國：訴求「泰天承命、服務眾生」</li><li>2 張裕國：目標將員林打造為「世界級的都市」</li><li>3 凃俊任：配合東彰道路北延段、完善山腳路外環</li><li>3 凃俊任：擴建長輩共餐、日間托老及失智關懷</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：ETtoday 2026-07-13；聯合報 2026-07-14；中時／Yahoo 2026-09-08；候選人社群發言；111 年選舉公報</span><span class="pg">07</span></div>
+</section>
+<section class="slide" data-id="S08" data-title="回顧：2022 市長">
+  <div class="mast"><b>市長</b><span>員林選舉特刊</span><span>S08</span></div>
+  <span class="sec">回顧：2022 市長</span>
+  <h2>2022 市長以 982 票之差決定，本屆無現任者參選</h2>
+  <div class="spread">
+    <div class="fig"><div class="stk"><div style="width:49.82%;background:var(--wine)" class="dk">游振雄 49.82%</div><div style="width:48.19%;background:var(--orange)" class="">陳秋蓉 48.19%</div><div style="width:1.99%;background:var(--sky)" class=""></div></div><div class="hb" style="margin-top:22px"><div class="r hi"><span class="l">游振雄</span><span class="tr tall"><span class="f" style="width:100.0%;background:var(--wine)"></span></span><span class="v">29,977 票｜49.82%</span></div><div class="r "><span class="l">陳秋蓉</span><span class="tr tall"><span class="f" style="width:96.7%;background:var(--orange)"></span></span><span class="v">28,995 票｜48.19%</span></div><div class="r "><span class="l">張文和</span><span class="tr tall"><span class="f" style="width:4.0%;background:var(--sky)"></span></span><span class="v">1,195 票｜1.99%</span></div></div><div class="figcap">2022 員林市長（第三屆）得票</div></div>
+    <div class="txt"><ul class="pts"><li>游振雄 29,977 票當選，任內辭世，現由代理市長代理</li><li>陳秋蓉 28,995 票，2026 參選縣議員</li><li>票差 982 票（1.63 個百分點）</li><li>2026 三位市長候選人都未參加 2022 市長選舉</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會選舉及公投資料庫；聯合報 2026-08-25</span><span class="pg">08</span></div>
+</section>
+<section class="slide" data-id="S09" data-title="看點：跨級轉戰">
+  <div class="mast"><b>看點</b><span>員林選舉特刊</span><span>S09</span></div>
+  <span class="sec">看點：跨級轉戰</span>
+  <h2>7 位候選人在 2022 與 2026 參選不同層級</h2>
+  <div class="spread">
+    <div class="fig"><svg viewBox="0 0 640 368" class="net" role="img" aria-label="2022 與 2026 參選層級變化"><path d="M200 293 C320 293 320 73 440 73" class="edge thin"><title>張政岳：大明里長兩屆</title></path><path d="M200 139 C320 139 320 95 440 95" class="edge thin"><title>凃俊任：第一高票縣議員</title></path><path d="M200 73 C320 73 320 161 440 161" class="edge thin"><title>陳秋蓉：2022參選員林市長</title></path><path d="M200 205 C320 205 320 183 440 183" class="edge thin"><title>張詩怡：現任市民代表第3選區</title></path><path d="M200 227 C320 227 320 205 440 205" class="edge thin"><title>張詠勝：現任市民代表第3選區</title></path><path d="M200 315 C320 315 320 271 440 271" class="edge thin"><title>張仕穎：2022參選三義里長落選</title></path><path d="M200 337 C320 337 320 293 440 293" class="edge thin"><title>張淑靜：2022南平里長落選</title></path><text x="100" y="18" class="colh" text-anchor="middle">2022 參選</text><rect x="0" y="34" width="200" height="52" class="box"/><rect x="0" y="34" width="200" height="24" class="n1"/><text x="10" y="51" class="n1t" text-anchor="start">市長</text><text x="12" y="78" class="bn" text-anchor="start">陳秋蓉</text><rect x="0" y="100" width="200" height="52" class="box"/><rect x="0" y="100" width="200" height="24" class="n1"/><text x="10" y="117" class="n1t" text-anchor="start">縣議員</text><text x="12" y="144" class="bn" text-anchor="start">凃俊任</text><rect x="0" y="166" width="200" height="74" class="box"/><rect x="0" y="166" width="200" height="24" class="n1"/><text x="10" y="183" class="n1t" text-anchor="start">市民代表</text><text x="12" y="210" class="bn" text-anchor="start">張詩怡</text><text x="12" y="232" class="bn" text-anchor="start">張詠勝</text><rect x="0" y="254" width="200" height="96" class="box"/><rect x="0" y="254" width="200" height="24" class="n1"/><text x="10" y="271" class="n1t" text-anchor="start">里長</text><text x="12" y="298" class="bn" text-anchor="start">張政岳</text><text x="12" y="320" class="bn" text-anchor="start">張仕穎</text><text x="12" y="342" class="bn" text-anchor="start">張淑靜</text><text x="540" y="18" class="colh" text-anchor="middle">2026 參選</text><rect x="440" y="34" width="200" height="74" class="box"/><rect x="440" y="34" width="200" height="24" class="n1"/><text x="450" y="51" class="n1t" text-anchor="start">市長</text><text x="452" y="78" class="bn" text-anchor="start">張政岳</text><text x="452" y="100" class="bn" text-anchor="start">凃俊任</text><rect x="440" y="122" width="200" height="96" class="box"/><rect x="440" y="122" width="200" height="24" class="n1"/><text x="450" y="139" class="n1t" text-anchor="start">縣議員</text><text x="452" y="166" class="bn" text-anchor="start">陳秋蓉</text><text x="452" y="188" class="bn" text-anchor="start">張詩怡</text><text x="452" y="210" class="bn" text-anchor="start">張詠勝</text><rect x="440" y="232" width="200" height="74" class="box"/><rect x="440" y="232" width="200" height="24" class="n1"/><text x="450" y="249" class="n1t" text-anchor="start">市民代表</text><text x="452" y="276" class="bn" text-anchor="start">張仕穎</text><text x="452" y="298" class="bn" text-anchor="start">張淑靜</text></svg><div class="figcap">左＝2022 參選層級，右＝2026 參選層級；依 2026 層級與號次排列</div></div>
+    <div class="txt"><ul class="pts"><li>選入標準：2022 與 2026 參選不同層級</li><li>里長 → 市長：張政岳</li><li>縣議員 → 市長：凃俊任</li><li>市長 → 縣議員：陳秋蓉</li><li>市民代表 → 縣議員：張詩怡、張詠勝</li><li>里長 → 市民代表：張仕穎、張淑靜</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會選舉及公投資料庫；wiki 索引摘要</span><span class="pg">09</span></div>
+</section>
+<section class="slide" data-id="S10" data-title="縣議員：13 搶 9">
+  <div class="mast"><b>縣議員</b><span>員林選舉特刊</span><span>S10</span></div>
+  <span class="sec">縣議員：13 搶 9</span>
+  <h2>縣議員 13 人爭取 9 席，其中 5 位為現任議員</h2>
+  <div class="spread">
+    <div class="fig"><div class="units" style="grid-template-columns:repeat(4,1fr)"><div class="ugrp"><h4>現任議員 <b>5</b></h4><div class="u dk" style="background:var(--wine)"><span>張雪如</span><span class="nb">2 號</span></div><div class="u dk" style="background:var(--wine)"><span>曹嘉豪</span><span class="nb">5 號</span></div><div class="u dk" style="background:var(--wine)"><span>張欣倩</span><span class="nb">8 號</span></div><div class="u dk" style="background:var(--wine)"><span>黃正盛</span><span class="nb">9 號</span></div><div class="u dk" style="background:var(--wine)"><span>劉惠娟</span><span class="nb">10 號</span></div></div><div class="ugrp"><h4>市代轉戰 <b>2</b></h4><div class="u" style="background:var(--sky)"><span>張詩怡</span><span class="nb">7 號</span></div><div class="u" style="background:var(--sky)"><span>張詠勝</span><span class="nb">12 號</span></div></div><div class="ugrp"><h4>曾參選 <b>4</b></h4><div class="u" style="background:var(--orange)"><span>陳秋蓉</span><span class="nb">3 號</span></div><div class="u" style="background:var(--orange)"><span>賴澤民</span><span class="nb">6 號</span></div><div class="u" style="background:var(--orange)"><span>林俊毅</span><span class="nb">11 號</span></div><div class="u" style="background:var(--orange)"><span>詹雅婷</span><span class="nb">13 號</span></div></div><div class="ugrp"><h4>未見參選紀錄 <b>2</b></h4><div class="u" style="background:var(--butter)"><span>游筑凱</span><span class="nb">1 號</span></div><div class="u" style="background:var(--butter)"><span>張愉婕</span><span class="nb">4 號</span></div></div></div><div class="figcap">依 2022 參選紀錄分組；組內依號次</div></div>
+    <div class="txt"><ul class="pts"><li>政黨：國民黨 5、民進黨 3、民眾黨 1、無黨籍 4</li><li>現任議員 5 位：皆於 2022 第 04 選區當選</li><li>市代轉戰 2 位：皆為現任第 3 選區市民代表</li><li>曾參選 4 位：2022 參選未當選</li><li>未見參選紀錄 2 位：皆為國民黨籍</li><li>劉惠娟 2022 以國民黨籍當選，2026 改無黨籍</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會候選人公告；中選會選舉及公投資料庫；聯合報 2026-08-25</span><span class="pg">10</span></div>
+</section>
+<section class="slide" data-id="S11" data-title="回顧：2022 縣議員">
+  <div class="mast"><b>縣議員</b><span>員林選舉特刊</span><span>S11</span></div>
+  <span class="sec">回顧：2022 縣議員</span>
+  <h2>2022 議員最後一席 7,649 票，次高落選者差 262 票</h2>
+  <div class="spread">
+    <div class="fig"><div class="hb"><div class="r hi"><span class="l">凃俊任</span><span class="tr"><span class="f" style="width:100.0%"></span></span><span class="v">13,485</span></div><div class="r hi"><span class="l">張錦昆</span><span class="tr"><span class="f" style="width:96.2%"></span></span><span class="v">12,967</span></div><div class="r hi"><span class="l">張欣倩</span><span class="tr"><span class="f" style="width:91.2%"></span></span><span class="v">12,302</span></div><div class="r hi"><span class="l">黃正盛</span><span class="tr"><span class="f" style="width:68.1%"></span></span><span class="v">9,178</span></div><div class="r hi"><span class="l">劉惠娟</span><span class="tr"><span class="f" style="width:61.9%"></span></span><span class="v">8,351</span></div><div class="r hi"><span class="l">詹木根</span><span class="tr"><span class="f" style="width:60.9%"></span></span><span class="v">8,210</span></div><div class="r hi"><span class="l">張雪如</span><span class="tr"><span class="f" style="width:59.4%"></span></span><span class="v">8,006</span></div><div class="r hi"><span class="l">曹嘉豪</span><span class="tr"><span class="f" style="width:56.7%"></span></span><span class="v">7,649</span></div><div class="r "><span class="l">賴澤民</span><span class="tr"><span class="f" style="width:54.8%"></span></span><span class="v">7,387</span></div><div class="r "><span class="l">鄭宇焱</span><span class="tr"><span class="f" style="width:52.5%"></span></span><span class="v">7,074</span></div><div class="r "><span class="l">吳為杰</span><span class="tr"><span class="f" style="width:40.1%"></span></span><span class="v">5,409</span></div><div class="r "><span class="l">林俊毅</span><span class="tr"><span class="f" style="width:7.2%"></span></span><span class="v">970</span></div><div class="r "><span class="l">詹閔雄</span><span class="tr"><span class="f" style="width:3.1%"></span></span><span class="v">416</span></div><div class="r "><span class="l">張順畝</span><span class="tr"><span class="f" style="width:2.2%"></span></span><span class="v">300</span></div></div><div class="figcap">2022 第 04 選區總得票，依票數排序；深色為當選</div></div>
+    <div class="txt"><ul class="pts"><li>2022 應選 8 席，2026 為 9 席</li><li>最後一席 7,649 票；次高落選 7,387 票，相差 262 票</li><li>2022 當選者中 5 位 2026 尋求連任</li><li>2022 最高票（13,485 票）者 2026 參選市長</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會選舉及公投資料庫，111 年彰化縣議員選舉</span><span class="pg">11</span></div>
+</section>
+<section class="slide" data-id="S12" data-title="市民代表：四區概況">
+  <div class="mast"><b>市民代表</b><span>員林選舉特刊</span><span>S12</span></div>
+  <span class="sec">市民代表：四區概況</span>
+  <h2>市民代表 4 區共 32 人，第 3 區 11 人最多</h2>
+  <div class="spread">
+    <div class="fig"><div class="legend"><span><i style="background:var(--wine)"></i>2026 候選人</span><span><i style="background:var(--sky)"></i>2022 應選席次</span><span><i style="background:var(--orange)"></i>現任續選</span></div><div class="gc"><div class="g"><div class="gb"><div class="b" style="height:36.4%;background:var(--wine)"><span>5</span></div><div class="b" style="height:29.1%;background:var(--sky)"><span>4</span></div><div class="b" style="height:21.8%;background:var(--orange)"><span>3</span></div></div><div class="gl">第1區</div></div><div class="g"><div class="gb"><div class="b" style="height:58.2%;background:var(--wine)"><span>8</span></div><div class="b" style="height:36.4%;background:var(--sky)"><span>5</span></div><div class="b" style="height:29.1%;background:var(--orange)"><span>4</span></div></div><div class="gl">第2區</div></div><div class="g"><div class="gb"><div class="b" style="height:80.0%;background:var(--wine)"><span>11</span></div><div class="b" style="height:43.6%;background:var(--sky)"><span>6</span></div><div class="b" style="height:29.1%;background:var(--orange)"><span>4</span></div></div><div class="gl">第3區</div></div><div class="g"><div class="gb"><div class="b" style="height:58.2%;background:var(--wine)"><span>8</span></div><div class="b" style="height:29.1%;background:var(--sky)"><span>4</span></div><div class="b" style="height:29.1%;background:var(--orange)"><span>4</span></div></div><div class="gl">第4區</div></div></div><div class="figcap">每區三根柱：2026 候選人數、2022 應選席次、2022 當選者 2026 續選人數</div></div>
+    <div class="txt"><ul class="pts"><li>第 1 區：5 人，現任 3 人續選</li><li>第 2 區：8 人，現任 4 人續選</li><li>第 3 區：11 人，現任 4 人續選，另 2 位現任轉戰縣議員</li><li>第 4 區：8 人，現任 4 人全數續選</li><li>2026 各區應選席次以中選會公告為準</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會候選人公告；111 年員林市市民代表選舉結果</span><span class="pg">12</span></div>
+</section>
+<section class="slide" data-id="S13" data-title="市民代表：第 1、2 區名冊">
+  <div class="mast"><b>市民代表</b><span>員林選舉特刊</span><span>S13</span></div>
+  <span class="sec">市民代表：第 1、2 區名冊</span>
+  <h2>第 1 區 5 人、第 2 區 8 人，依戶籍選區投票</h2>
+  <div class="spread">
+    <div class="fig"><div class="dir"><div><h3>第1區 <small>5 人</small></h3><ol><li><span class="n">1</span><b>江念穎</b><span><span class="tg new">新人</span></span></li><li><span class="n">2</span><b>謝淑敏</b><span><span class="tg re">再戰</span></span></li><li><span class="n">3</span><b>張國良</b><span><span class="tg inc">現任</span></span></li><li><span class="n">4</span><b>張徽澤</b><span><span class="tg inc">現任</span></span></li><li><span class="n">5</span><b>江品蓉</b><span><span class="tg inc">現任</span></span></li></ol></div><div><h3>第2區 <small>8 人</small></h3><ol><li><span class="n">1</span><b>吳政彥</b><span><span class="tg inc">現任</span></span></li><li><span class="n">2</span><b>陳侑興</b><span><span class="tg new">新人</span></span></li><li><span class="n">3</span><b>張嘉龍</b><span><span class="tg up">政黨提名</span></span></li><li><span class="n">4</span><b>洪春美</b><span><span class="tg inc">現任</span></span></li><li><span class="n">5</span><b>謝宜芳</b><span><span class="tg new">新人</span></span></li><li><span class="n">6</span><b>王勝坪</b><span><span class="tg inc">現任</span></span></li><li><span class="n">7</span><b>曹月碧</b><span><span class="tg inc">現任</span></span></li><li><span class="n">8</span><b>黃千芮</b><span><span class="tg new">新人</span></span></li></ol></div></div></div>
+    <div class="txt"><ul class="pts"><li>第 1 區：現任 3、再戰 1、新人 1</li><li>第 2 區：現任 4、新人 3、政黨提名 1</li><li>依戶籍所在選區投票</li><li>選區與投票所請見投票通知單</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會候選人公告；wiki 索引摘要</span><span class="pg">13</span></div>
+</section>
+<section class="slide" data-id="S14" data-title="市民代表：第 3、4 區名冊">
+  <div class="mast"><b>市民代表</b><span>員林選舉特刊</span><span>S14</span></div>
+  <span class="sec">市民代表：第 3、4 區名冊</span>
+  <h2>第 3 區 11 人、第 4 區 8 人，依戶籍選區投票</h2>
+  <div class="spread">
+    <div class="fig"><div class="dir"><div><h3>第3區 <small>11 人</small></h3><ol><li><span class="n">1</span><b>林玟佑</b><span><span class="tg inc">現任</span></span></li><li><span class="n">2</span><b>洪志聖</b><span><span class="tg new">新人</span></span></li><li><span class="n">3</span><b>邱郁文</b><span><span class="tg up">政黨提名</span></span></li><li><span class="n">4</span><b>石宗凱</b><span><span class="tg up">政黨提名</span></span></li><li><span class="n">5</span><b>林金泉</b><span><span class="tg re">再戰</span></span></li><li><span class="n">6</span><b>張瑀瑩</b><span><span class="tg inc">現任</span></span></li><li><span class="n">7</span><b>何國維</b><span><span class="tg re">再戰</span></span></li><li><span class="n">8</span><b>許佑宇</b><span></span></li><li><span class="n">9</span><b>陳文明</b><span><span class="tg inc">現任</span></span></li><li><span class="n">10</span><b>張偉傑</b><span><span class="tg inc">現任</span></span></li><li><span class="n">11</span><b>洪煜婷</b><span><span class="tg new">新人</span></span></li></ol></div><div><h3>第4區 <small>8 人</small></h3><ol><li><span class="n">1</span><b>黃瓊誼</b><span><span class="tg inc">現任</span></span></li><li><span class="n">2</span><b>張仕穎</b><span><span class="tg re">曾參選</span></span></li><li><span class="n">3</span><b>張淑靜</b><span><span class="tg re">曾參選</span></span></li><li><span class="n">4</span><b>馮明仕</b><span><span class="tg inc">現任</span></span></li><li><span class="n">5</span><b>林育生</b><span><span class="tg inc">現任</span></span></li><li><span class="n">6</span><b>彭惠敏</b><span><span class="tg inc">現任</span></span></li><li><span class="n">7</span><b>徐培財</b><span><span class="tg new">新人</span></span></li><li><span class="n">8</span><b>黃金堂</b><span><span class="tg re">再戰</span></span></li></ol></div></div></div>
+    <div class="txt"><ul class="pts"><li>第 3 區：現任 4、再戰 2、新人 2、政黨提名 2、其他 1</li><li>第 4 區：現任 4、再戰 1、曾參選里長 2、新人 1</li><li>第 3 區另有 2 位現任代表轉戰縣議員</li><li>依戶籍所在選區投票</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會候選人公告；wiki 索引摘要</span><span class="pg">14</span></div>
+</section>
+<section class="slide" data-id="S15" data-title="里長：十大人口里">
+  <div class="mast"><b>里長</b><span>員林選舉特刊</span><span>S15</span></div>
+  <span class="sec">里長：十大人口里</span>
+  <h2>十大人口里共 23 人參選，8 里由現任里長尋求連任</h2>
+  <div class="spread">
+    <div class="fig"><div class="legend"><span><i style="background:var(--sky)"></i>2022 當選者續選</span><span><i style="background:var(--orange)"></i>2022 當選者未登記</span><span><i class="hatch"></i>2022 同額競選</span></div><div class="lic"><div class="r hd"><span>里</span><span>2022 當選者得票率</span><span>2026 候選人（號次）</span></div><div class="r"><span class="l">三和里</span><span class="tr"><span class="f " style="width:58.25%"></span><span class="p">吳權勝 58.25%</span></span><span class="cand">1 吳權勝 · 2 曹惠纓</span></div><div class="r"><span class="l">南平里</span><span class="tr"><span class="f " style="width:42.19%"></span><span class="p">吳國勝 42.19%</span></span><span class="cand">1 吳國勝 · 2 蔡群英</span></div><div class="r"><span class="l">惠來里</span><span class="tr"><span class="f " style="width:58.74%"></span><span class="p">游朝元 58.74%</span></span><span class="cand">1 陳敏聰 · 2 游朝元 · 3 宋政輝</span></div><div class="r"><span class="l">南興里</span><span class="tr"><span class="f out" style="width:50.56%"></span><span class="p">王榮展 50.56%</span></span><span class="cand">1 陳麗鳳 · 2 陳宥臻 · 3 陳秀鑾 · 4 李秉鴻</span></div><div class="r"><span class="l">新生里</span><span class="tr"><span class="f " style="width:65.48%"></span><span class="p">巫吉清 65.48%</span></span><span class="cand">1 黃耀桐 · 2 巫吉清</span></div><div class="r"><span class="l">萬年里</span><span class="tr"><span class="f out" style="width:50.84%"></span><span class="p">林張阿賞 50.84%</span></span><span class="cand">1 林世豪 · 2 許美月</span></div><div class="r"><span class="l">大饒里</span><span class="tr"><span class="f unc" style="width:100%"></span><span class="p">張明勤 100%</span></span><span class="cand">1 陳淑珍 · 2 張明勤</span></div><div class="r"><span class="l">三多里</span><span class="tr"><span class="f unc" style="width:100%"></span><span class="p">黃再瑞 100%</span></span><span class="cand">1 黃再瑞 · 2 林子勛</span></div><div class="r"><span class="l">三愛里</span><span class="tr"><span class="f unc" style="width:100%"></span><span class="p">黃雅惠 100%</span></span><span class="cand">1 卓金龍 · 2 黃雅惠</span></div><div class="r"><span class="l">三橋里</span><span class="tr"><span class="f " style="width:53.26%"></span><span class="p">賴柏諺 53.26%</span></span><span class="cand">1 邱玉雪 · 2 賴柏諺</span></div></div><div class="figcap">長條＝2022 當選者得票率；右側為 2026 候選人（號次）</div></div>
+    <div class="txt"><ul class="pts"><li>8 里由 2022 當選的里長尋求連任</li><li>南興里、萬年里：2022 當選者未登記參選</li><li>南興里 4 人參選，人數最多</li><li>大饒、三多、三愛：2022 為同額競選</li><li>23 位候選人皆為無黨籍</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會候選人公告；111 年員林市里長選舉結果</span><span class="pg">15</span></div>
+</section>
+<section class="slide" data-id="S16" data-title="議題：長者健保免費">
+  <div class="mast"><b>議題</b><span>員林選舉特刊</span><span>S16</span></div>
+  <span class="sec">議題：長者健保免費</span>
+  <h2>3 位縣長候選人主張 65 歲以上免健保費，1 位持保留</h2>
+  <div class="spread">
+    <div class="fig"><div class="legend"><span><i class="dot"></i>有提出主張</span><span><i class="ring"></i>內容待查</span><span><i class="tri"></i>表態保留</span><span><i class="dash"></i>報導中未見</span></div><table class="mx"><tr><th></th><th>65 歲以上免健保費</th><th>長照／失智</th><th>長者交通接送</th><th>6 歲以下免健保費</th></tr><tr><td>陳素月</td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr><tr><td>魏平政</td><td><i class="dot" title="有提出主張"></i></td><td><i class="dot" title="有提出主張"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dot" title="有提出主張"></i></td></tr><tr><td>邱建富</td><td><i class="dot" title="有提出主張"></i></td><td><i class="ring" title="已提出但內容待查"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr><tr><td>陳重嘉</td><td><i class="tri" title="表態保留"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dash" title="公開報導中未見"></i></td><td><i class="dash" title="公開報導中未見"></i></td></tr></table><div class="sub"><div class="hb"><div class="r hi"><span class="l">社區關懷據點／共餐</span><span class="tr"><span class="f" style="width:100.0%"></span></span><span class="v">5</span></div><div class="r "><span class="l">巷弄長照站</span><span class="tr"><span class="f" style="width:40.0%"></span></span><span class="v">2</span></div><div class="r "><span class="l">老人日托</span><span class="tr"><span class="f" style="width:20.0%"></span></span><span class="v">1</span></div></div></div><div class="figcap">上：縣長候選人主張矩陣（符號同 S05）；下：2022 公報中基層候選人的長者照顧承諾人數</div></div>
+    <div class="txt"><ul class="pts"><li>陳素月 2026 年 6 月最早提出，魏平政、邱建富隨後跟進</li><li>陳重嘉：福利政策應量力而為</li><li>邱建富「幸福五吉」內容待查</li><li>市長參選人：凃俊任提擴建共餐、托老與失智關懷；張政岳、張裕國報導中未見長照專項</li><li>基層：2022 公報中 8 位候選人提出長者照顧承諾</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：報新聞 2026-11-03；聯合報；中央社 2026-10-01；111 年員林市選舉公報</span><span class="pg">16</span></div>
+</section>
+<section class="slide" data-id="S17" data-title="議題：月票與交通">
+  <div class="mast"><b>議題</b><span>員林選舉特刊</span><span>S17</span></div>
+  <span class="sec">議題：月票與交通</span>
+  <h2>跨縣市月票從 999 元降到 699 元，是縣長選戰的交通焦點</h2>
+  <div class="spread">
+    <div class="fig"><div class="vc"><div class="col"><span class="num">999</span><div class="bar hi" style="height:78.0%"></div><span class="cl">現行跨縣市</span></div><div class="col"><span class="num">699</span><div class="bar" style="height:54.6%"></div><span class="cl">台中市民</span></div><div class="col"><span class="num">699</span><div class="bar" style="height:54.6%"></div><span class="cl">候選人主張</span></div></div><div class="figcap">中彰投苗跨縣市 TPASS 月票（元／月）</div></div>
+    <div class="txt"><ul class="pts"><li>1 陳素月：降到 699 元，由縣府加碼補貼</li><li>2 魏平政：跟進 699 元</li><li>3 邱建富：支持降價，但先全面檢討公車路線與接駁</li><li>4 陳重嘉：報導中未見交通專項政見</li><li>員林在地：多位市民代表、里長候選人主張活化鐵路高架橋下空間（2022 公報）</li><li>市長參選人：凃俊任提東彰道路北延段、山腳路外環；張政岳、張裕國報導中未見交通專項</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：報新聞 2026-11-03；中央社 2026-10-01；111 年員林市選舉公報；候選人社群發言</span><span class="pg">17</span></div>
+</section>
+<section class="slide" data-id="S18" data-title="議題：排水與淹水">
+  <div class="mast"><b>議題</b><span>員林選舉特刊</span><span>S18</span></div>
+  <span class="sec">議題：排水與淹水</span>
+  <h2>2022 公報中有 14 位候選人提出排水或淹水改善承諾</h2>
+  <div class="spread">
+    <div class="fig"><svg viewBox="0 0 640 416" class="net" role="img" aria-label="議題與候選人關係圖"><path d="M240 208 L220 59" class="edge" style="stroke-width:5.0"/><path d="M400 208 L420 99" class="edge" style="stroke-width:8.0"/><path d="M240 208 L220 223" class="edge" style="stroke-width:8.0"/><path d="M400 208 L420 263" class="edge" style="stroke-width:5.0"/><path d="M240 208 L220 367" class="edge" style="stroke-width:3.5"/><path d="M400 208 L420 367" class="edge" style="stroke-width:3.5"/><rect x="0" y="4" width="220" height="110" class="box"/><rect x="0" y="4" width="220" height="24" class="n1"/><text x="10" y="21" class="n1t" text-anchor="start">東區（2）</text><text x="10" y="48" class="bn" text-anchor="start">張國良</text><text x="10" y="67" class="bs" text-anchor="start">解決崙雅巷淹水</text><text x="10" y="88" class="bn" text-anchor="start">張徽澤</text><text x="10" y="107" class="bs" text-anchor="start">東區水溝通暢</text><rect x="420" y="4" width="220" height="190" class="box"/><rect x="420" y="4" width="220" height="24" class="n1"/><text x="430" y="21" class="n1t" text-anchor="start">北區市區（4）</text><text x="430" y="48" class="bn" text-anchor="start">陳文明</text><text x="430" y="67" class="bs" text-anchor="start">海綿城市</text><text x="430" y="88" class="bn" text-anchor="start">張偉傑</text><text x="430" y="107" class="bs" text-anchor="start">排水系統擴建</text><text x="430" y="128" class="bn" text-anchor="start">林玟佑</text><text x="430" y="147" class="bs" text-anchor="start">雨水下水道清淤</text><text x="430" y="168" class="bn" text-anchor="start">張詠勝</text><text x="430" y="187" class="bs" text-anchor="start">改善北區易淹水區域</text><rect x="0" y="128" width="220" height="190" class="box"/><rect x="0" y="128" width="220" height="24" class="n1"/><text x="10" y="145" class="n1t" text-anchor="start">西區（4）</text><text x="10" y="172" class="bn" text-anchor="start">黃金堂</text><text x="10" y="191" class="bs" text-anchor="start">西區排水防洪</text><text x="10" y="212" class="bn" text-anchor="start">彭惠敏</text><text x="10" y="231" class="bs" text-anchor="start">西區道路排水建設</text><text x="10" y="252" class="bn" text-anchor="start">黃瓊誼</text><text x="10" y="271" class="bs" text-anchor="start">整治市區排水系統</text><text x="10" y="292" class="bn" text-anchor="start">馮明仕</text><text x="10" y="311" class="bs" text-anchor="start">維護排水系統</text><rect x="420" y="208" width="220" height="110" class="box"/><rect x="420" y="208" width="220" height="24" class="n1"/><text x="430" y="225" class="n1t" text-anchor="start">南區（2）</text><text x="430" y="252" class="bn" text-anchor="start">洪春美</text><text x="430" y="271" class="bs" text-anchor="start">南區道路及排水改善</text><text x="430" y="292" class="bn" text-anchor="start">張政岳</text><text x="430" y="311" class="bs" text-anchor="start">南區淹水改善</text><rect x="0" y="332" width="220" height="70" class="box"/><rect x="0" y="332" width="220" height="24" class="n1"/><text x="10" y="349" class="n1t" text-anchor="start">新生里（1）</text><text x="10" y="376" class="bn" text-anchor="start">巫吉清</text><text x="10" y="395" class="bs" text-anchor="start">低窪地區排水整治</text><rect x="420" y="332" width="220" height="70" class="box"/><rect x="420" y="332" width="220" height="24" class="n1"/><text x="430" y="349" class="n1t" text-anchor="start">全區（1）</text><text x="430" y="376" class="bn" text-anchor="start">黃正盛</text><text x="430" y="395" class="bs" text-anchor="start">加強排水功能因應極端氣候</text><rect x="240" y="178" width="160" height="60" class="hub"/><text x="320" y="215" class="hubt" text-anchor="middle">排水與淹水</text></svg><div class="figcap">中心為議題，外圈依地區分群；連線＝候選人在 2022 公報中的排水承諾</div></div>
+    <div class="txt"><ul class="pts"><li>東區 2 位、北區／市區 4 位、西區 4 位</li><li>南區 2 位、新生里 1 位、全區 1 位</li><li>張政岳一項為里長任內自述成果</li><li>投票前可查：家附近的排水工程是否完成</li><li>可向市公所或縣府水利資源處查詢</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：111 年員林市市長、市民代表、里長選舉公報；ETtoday 2026-07-13</span><span class="pg">18</span></div>
+</section>
+<section class="slide" data-id="S19" data-title="投票前檢核清單">
+  <div class="mast"><b>收尾</b><span>員林選舉特刊</span><span>S19</span></div>
+  <span class="sec">投票前檢核清單</span>
+  <h2>投票前先問三件事：具體嗎、做到了嗎、消息可靠嗎</h2>
+  <div class="spread">
+    <div class="fig"><div class="ck"><div style="background:var(--sky)"><span class="kicknum">一</span><div><b>政見具體嗎？</b><small>預算、時程、做法</small></div></div><div style="background:var(--butter)"><span class="kicknum">二</span><div><b>上次做到了嗎？</b><small>對照 2022 公報政見</small></div></div><div style="background:var(--orange)"><span class="kicknum">三</span><div><b>消息可靠嗎？</b><small>公報、發表會優先</small></div></div></div></div>
+    <div class="txt"><ul class="pts"><li>這是該職位有權做的事嗎？</li><li>現任者：找第三方佐證（公文、新聞、現場）</li><li>網路轉傳、匿名消息先查證</li><li>2026 選舉公報公布後，到中選會網站查完整政見</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：彰化縣員林市選舉知識庫</span><span class="pg">19</span></div>
+</section>
+<section class="slide" data-id="S20" data-title="版權頁">
+  <div class="mast"><b>收尾</b><span>員林選舉特刊</span><span>S20</span></div>
+  <span class="sec">版權頁</span>
+  <h2>資料截至 2026-11-15，一切以中選會公告為準</h2>
+  <div class="spread">
+    <div class="fig"><div class="hb"><div class="r "><span class="l">無黨籍</span><span class="tr"><span class="f" style="width:100.0%"></span></span><span class="v">44</span></div><div class="r "><span class="l">中國國民黨</span><span class="tr"><span class="f" style="width:34.1%"></span></span><span class="v">15</span></div><div class="r "><span class="l">民主進步黨</span><span class="tr"><span class="f" style="width:25.0%"></span></span><span class="v">11</span></div><div class="r "><span class="l">台灣民眾黨</span><span class="tr"><span class="f" style="width:9.1%"></span></span><span class="v">4</span></div><div class="r "><span class="l">中華文化共和黨</span><span class="tr"><span class="f" style="width:2.3%"></span></span><span class="v">1</span></div></div><div class="figcap">本刊 75 位候選人的政黨分布</div></div>
+    <div class="txt"><ul class="pts"><li>2026 選舉公報尚未公布，政見依媒體報導與公開發言整理</li><li>「2022 政見」為候選人當年於公報自填內容</li><li>政見兌現程度未完成第三方查證，不提供評分</li><li>候選人依號次排列，不代表支持或反對任何人</li><li>媒體：中央社、聯合報、自由時報、ETtoday、中時、報新聞</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：彰化縣員林市選舉知識庫</span><span class="pg">20</span></div>
+</section>
+</div></div>
+<div id="nav"><button id="prev" aria-label="上一張">‹ 上一張</button><span id="count"></span><button id="next" aria-label="下一張">下一張 ›</button></div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var slides=[].slice.call(document.querySelectorAll('.slide')),deck=$('deck'),i=0,sel=$('tocSel');
+  slides.forEach(function(s,k){var o=document.createElement('option');o.value=k;o.textContent=(k+1)+'. '+s.dataset.title;sel.appendChild(o)});
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    $('count').textContent=(i+1)+' / '+slides.length;$('progress').style.width=((i+1)/slides.length*100)+'%';sel.value=i;
+    try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+  function fit(){deck.style.transform='scale('+Math.min(innerWidth/1320,innerHeight/770)+')'}
+  $('prev').onclick=function(){show(i-1)};$('next').onclick=function(){show(i+1)};
+  sel.onchange=function(){show(+sel.value);sel.blur()};
+  document.addEventListener('keydown',function(e){if(e.target===sel)return;
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();show(i+1)}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();show(i-1)}
+    else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1)});
+  deck.addEventListener('click',function(e){if(innerWidth<=820)return;var r=deck.getBoundingClientRect(),x=e.clientX-r.left;
+    if(x<r.width*.2)show(i-1);else if(x>r.width*.8)show(i+1)});
+  var tx=null;document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(tx===null||innerWidth<=820)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));tx=null});
+  addEventListener('resize',fit);fit();var h=parseInt((location.hash||'').slice(1),10);show(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,5167 @@
+{
+   "broken" : {},
+   "edges" : [
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L5-怎麼追蹤承諾"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "L6-投票日實務"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "00-課程地圖",
+         "kind" : "nav",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "張雪如-議員"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "2022-platform-fulfilment",
+         "kind" : "substantive",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "substantive",
+         "to" : "游筑凱-議員"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "2022-results",
+         "kind" : "nav",
+         "to" : "L5-怎麼追蹤承諾"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "游筑凱-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張雪如-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "賴澤民-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張詩怡-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "黃正盛-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "林俊毅-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "張詠勝-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "substantive",
+         "to" : "詹雅婷-議員"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "2026-candidates",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "L1-一次投五張票",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "L1-一次投五張票",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "L1-一次投五張票",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "L1-一次投五張票",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "L2-五種職位做什麼",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "L3-選票怎麼算",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "L3-選票怎麼算",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "L3-選票怎麼算",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "L3-選票怎麼算",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "L3-選票怎麼算",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "L5-怎麼追蹤承諾"
+      },
+      {
+         "from" : "L4-怎麼讀政見",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "L5-怎麼追蹤承諾",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "L5-怎麼追蹤承諾",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "L5-怎麼追蹤承諾",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "L5-怎麼追蹤承諾",
+         "kind" : "nav",
+         "to" : "L6-投票日實務"
+      },
+      {
+         "from" : "L5-怎麼追蹤承諾",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "L6-投票日實務",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "L6-投票日實務",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "L6-投票日實務",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "L6-投票日實務",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "L6-投票日實務"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "election-2026",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "黃正盛-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張雪如-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張詠勝-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張詩怡-議員"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "吳權勝-三和里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "曹惠纓-三和里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "吳國勝-南平里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "蔡群英-南平里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "游朝元-惠來里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "陳敏聰-惠來里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "宋政輝-惠來里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "陳麗鳳-南興里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "巫吉清-新生里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "黃耀桐-新生里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "許美月-萬年里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "林世豪-萬年里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "張明勤-大饒里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "陳淑珍-大饒里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "黃再瑞-三多里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "林子勛-三多里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "黃雅惠-三愛里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "卓金龍-三愛里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "賴柏諺-三橋里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "substantive",
+         "to" : "邱玉雪-三橋里里長"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "incumbent-and-transfer-analysis",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "00-課程地圖"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L1-一次投五張票"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L3-選票怎麼算"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L5-怎麼追蹤承諾"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "L6-投票日實務"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "游筑凱-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張雪如-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "賴澤民-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張詩怡-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃正盛-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林俊毅-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張詠勝-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "詹雅婷-議員"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "江念穎-代表1區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "謝淑敏-代表1區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張國良-代表1區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張徽澤-代表1區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "江品蓉-代表1區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "吳政彥-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳侑興-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張嘉龍-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "洪春美-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "謝宜芳-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "王勝坪-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "曹月碧-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃千芮-代表2區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林玟佑-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "洪志聖-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "邱郁文-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "石宗凱-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林金泉-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張瑀瑩-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "何國維-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "許佑宇-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳文明-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張偉傑-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "洪煜婷-代表3區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃瓊誼-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張仕穎-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張淑靜-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "馮明仕-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林育生-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "彭惠敏-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "徐培財-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃金堂-代表4區"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "吳權勝-三和里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "曹惠纓-三和里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "吳國勝-南平里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "蔡群英-南平里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳敏聰-惠來里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "游朝元-惠來里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "宋政輝-惠來里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳麗鳳-南興里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳宥臻-南興里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳秀鑾-南興里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "李秉鴻-南興里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃耀桐-新生里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "巫吉清-新生里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林世豪-萬年里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "許美月-萬年里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "陳淑珍-大饒里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "張明勤-大饒里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃再瑞-三多里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "林子勛-三多里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "卓金龍-三愛里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "黃雅惠-三愛里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "邱玉雪-三橋里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "賴柏諺-三橋里里長"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "2022-platform-fulfilment"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "incumbent-and-transfer-analysis"
+      },
+      {
+         "from" : "index",
+         "kind" : "nav",
+         "to" : "how-to-use"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "nav",
+         "to" : "index"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "yuanlin-intro",
+         "kind" : "nav",
+         "to" : "L2-五種職位做什麼"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "何國維-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "substantive",
+         "to" : "林育生-代表4區"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "substantive",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "凃俊任-市長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "劉惠娟-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "劉惠娟-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "劉惠娟-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "劉惠娟-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "卓金龍-三愛里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "substantive",
+         "to" : "張淑靜-代表4區"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "吳國勝-南平里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "吳政彥-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "吳權勝-三和里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "張國良-代表1區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "張徽澤-代表1區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "陳文明-代表3區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "黃金堂-代表4區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "張詠勝-議員"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "張偉傑-代表3區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "林玟佑-代表3區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "彭惠敏-代表4區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "黃瓊誼-代表4區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "馮明仕-代表4區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "洪春美-代表2區"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "巫吉清-新生里里長"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "黃正盛-議員"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "substantive",
+         "to" : "2022-platform-fulfilment"
+      },
+      {
+         "from" : "員林排水與淹水改善",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "宋政輝-惠來里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "巫吉清-新生里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張仕穎-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張偉傑-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張嘉龍-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張國良-代表1區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張徽澤-代表1區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "張愉婕-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "substantive",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "substantive",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張政岳-市長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "substantive",
+         "to" : "王勝坪-代表2區"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張明勤-大饒里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "substantive",
+         "to" : "陳秋蓉-議員"
+      },
+      {
+         "from" : "張欣倩-議員",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "substantive",
+         "to" : "吳國勝-南平里里長"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張淑靜-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "張瑀瑩-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張裕國-市長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張裕國-市長",
+         "kind" : "substantive",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "張裕國-市長",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "張裕國-市長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "張詠勝-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "substantive",
+         "to" : "黃正盛-議員"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "張詩怡-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "張雪如-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "張雪如-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "張雪如-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "張雪如-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "彭惠敏-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "徐培財-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "曹嘉豪-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "曹嘉豪-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "曹嘉豪-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "曹嘉豪-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "曹惠纓-三和里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "曹月碧-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "李秉鴻-南興里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "林世豪-萬年里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "林俊毅-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "林子勛-三多里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "林玟佑-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "林育生-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "林金泉-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "江品蓉-代表1區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "江念穎-代表1區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "洪志聖-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "洪春美-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "洪煜婷-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "游朝元-惠來里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "游筑凱-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "substantive",
+         "to" : "張明勤-大饒里里長"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "王勝坪-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "石宗凱-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "蔡群英-南平里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "許佑宇-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "許美月-萬年里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "詹雅婷-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "謝宜芳-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "謝淑敏-代表1區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "賴柏諺-三橋里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "賴澤民-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "馮明仕-代表4區"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "黃瓊誼-代表4區"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "張偉傑-代表3區"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "陳文明-代表3區"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "巫吉清-新生里里長"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "跨縣市月票與公共運輸",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "邱建富-縣長",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "邱玉雪-三橋里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "邱郁文-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "吳權勝-三和里里長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "林玟佑-代表3區"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "張徽澤-代表1區"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "賴柏諺-三橋里里長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "張詠勝-議員"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "陳敏聰-惠來里里長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "巫吉清-新生里里長"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "張偉傑-代表3區"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "substantive",
+         "to" : "2022-platform-fulfilment"
+      },
+      {
+         "from" : "長者健保免費與社福",
+         "kind" : "nav",
+         "to" : "L4-怎麼讀政見"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳侑興-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳宥臻-南興里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳敏聰-惠來里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳文明-代表3區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳淑珍-大饒里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳秀鑾-南興里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳秋蓉-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "陳素月-縣長",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "陳重嘉-縣長",
+         "kind" : "substantive",
+         "to" : "魏平政-縣長"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "陳麗鳳-南興里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "馮明仕-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "substantive",
+         "to" : "長者健保免費與社福"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "substantive",
+         "to" : "邱建富-縣長"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "substantive",
+         "to" : "陳素月-縣長"
+      },
+      {
+         "from" : "魏平政-縣長",
+         "kind" : "substantive",
+         "to" : "陳重嘉-縣長"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃再瑞-三多里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃千芮-代表2區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "張詩怡-議員"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "曹嘉豪-議員"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "劉惠娟-議員"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "張愉婕-議員"
+      },
+      {
+         "from" : "黃正盛-議員",
+         "kind" : "substantive",
+         "to" : "張欣倩-議員"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "substantive",
+         "to" : "跨縣市月票與公共運輸"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃瓊誼-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃耀桐-新生里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "substantive",
+         "to" : "員林排水與淹水改善"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃金堂-代表4區",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "nav",
+         "to" : "election-2026"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "nav",
+         "to" : "2022-results"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "nav",
+         "to" : "2026-candidates"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "nav",
+         "to" : "yuanlin-intro"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "template",
+         "to" : "張政岳-市長"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "template",
+         "to" : "張裕國-市長"
+      },
+      {
+         "from" : "黃雅惠-三愛里里長",
+         "kind" : "template",
+         "to" : "凃俊任-市長"
+      }
+   ],
+   "nodes" : [
+      {
+         "id" : "00-課程地圖",
+         "rel" : "lessons/00-課程地圖.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "2022-platform-fulfilment",
+         "rel" : "comparisons/2022-platform-fulfilment.md",
+         "type" : "comparison"
+      },
+      {
+         "id" : "2022-results",
+         "rel" : "elections/2022-results.md",
+         "type" : "election"
+      },
+      {
+         "id" : "2026-candidates",
+         "rel" : "elections/2026-candidates.md",
+         "type" : "election"
+      },
+      {
+         "id" : "L1-一次投五張票",
+         "rel" : "lessons/L1-一次投五張票.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "L2-五種職位做什麼",
+         "rel" : "lessons/L2-五種職位做什麼.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "L3-選票怎麼算",
+         "rel" : "lessons/L3-選票怎麼算.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "L4-怎麼讀政見",
+         "rel" : "lessons/L4-怎麼讀政見.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "L5-怎麼追蹤承諾",
+         "rel" : "lessons/L5-怎麼追蹤承諾.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "L6-投票日實務",
+         "rel" : "lessons/L6-投票日實務.md",
+         "type" : "lesson"
+      },
+      {
+         "id" : "election-2026",
+         "rel" : "overview/election-2026.md",
+         "type" : "overview"
+      },
+      {
+         "id" : "how-to-use",
+         "rel" : "overview/how-to-use.md",
+         "type" : "overview"
+      },
+      {
+         "id" : "incumbent-and-transfer-analysis",
+         "rel" : "comparisons/incumbent-and-transfer-analysis.md",
+         "type" : "comparison"
+      },
+      {
+         "id" : "index",
+         "rel" : "index.md",
+         "type" : "meta"
+      },
+      {
+         "id" : "log",
+         "rel" : "log.md",
+         "type" : "meta"
+      },
+      {
+         "id" : "yuanlin-intro",
+         "rel" : "overview/yuanlin-intro.md",
+         "type" : "overview"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "7",
+         "id" : "何國維-代表3區",
+         "incumbent" : "false",
+         "name" : "何國維",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/何國維-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市",
+         "election_number" : "3",
+         "id" : "凃俊任-市長",
+         "incumbent" : "true",
+         "name" : "凃俊任",
+         "party" : "中國國民黨",
+         "position" : "mayor",
+         "race" : "市長",
+         "rel" : "candidates/mayor/凃俊任-市長.md",
+         "type" : "cand-mayor"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "10",
+         "id" : "劉惠娟-議員",
+         "incumbent" : "true",
+         "name" : "劉惠娟",
+         "party" : "無黨籍",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/劉惠娟-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市三愛里",
+         "election_number" : "1",
+         "id" : "卓金龍-三愛里里長",
+         "incumbent" : "false",
+         "li" : "三愛里",
+         "name" : "卓金龍",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/卓金龍-三愛里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市南平里",
+         "election_number" : "1",
+         "id" : "吳國勝-南平里里長",
+         "incumbent" : "true",
+         "li" : "南平里",
+         "name" : "吳國勝",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/吳國勝-南平里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "1",
+         "id" : "吳政彥-代表2區",
+         "incumbent" : "true",
+         "name" : "吳政彥",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/吳政彥-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市三和里",
+         "election_number" : "1",
+         "id" : "吳權勝-三和里里長",
+         "incumbent" : "true",
+         "li" : "三和里",
+         "name" : "吳權勝",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/吳權勝-三和里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "id" : "員林排水與淹水改善",
+         "rel" : "topics/員林排水與淹水改善.md",
+         "type" : "topic"
+      },
+      {
+         "district" : "員林市惠來里",
+         "election_number" : "3",
+         "id" : "宋政輝-惠來里里長",
+         "incumbent" : "false",
+         "li" : "惠來里",
+         "name" : "宋政輝",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/宋政輝-惠來里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市新生里",
+         "election_number" : "2",
+         "id" : "巫吉清-新生里里長",
+         "incumbent" : "true",
+         "li" : "新生里",
+         "name" : "巫吉清",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/巫吉清-新生里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "2",
+         "id" : "張仕穎-代表4區",
+         "incumbent" : "false",
+         "name" : "張仕穎",
+         "party" : "台灣民眾黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張仕穎-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "10",
+         "id" : "張偉傑-代表3區",
+         "incumbent" : "true",
+         "name" : "張偉傑",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張偉傑-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "3",
+         "id" : "張嘉龍-代表2區",
+         "incumbent" : "false",
+         "name" : "張嘉龍",
+         "party" : "台灣民眾黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張嘉龍-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市市民代表第1選舉區",
+         "election_number" : "3",
+         "id" : "張國良-代表1區",
+         "incumbent" : "true",
+         "name" : "張國良",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張國良-代表1區.md",
+         "type" : "cand-rep",
+         "zone" : "1"
+      },
+      {
+         "district" : "員林市市民代表第1選舉區",
+         "election_number" : "4",
+         "id" : "張徽澤-代表1區",
+         "incumbent" : "true",
+         "name" : "張徽澤",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張徽澤-代表1區.md",
+         "type" : "cand-rep",
+         "zone" : "1"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "4",
+         "id" : "張愉婕-議員",
+         "incumbent" : "false",
+         "name" : "張愉婕",
+         "party" : "中國國民黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/張愉婕-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市",
+         "election_number" : "1",
+         "id" : "張政岳-市長",
+         "incumbent" : "false",
+         "name" : "張政岳",
+         "party" : "民主進步黨",
+         "position" : "mayor",
+         "race" : "市長",
+         "rel" : "candidates/mayor/張政岳-市長.md",
+         "type" : "cand-mayor"
+      },
+      {
+         "district" : "員林市大饒里",
+         "election_number" : "2",
+         "id" : "張明勤-大饒里里長",
+         "incumbent" : "true",
+         "li" : "大饒里",
+         "name" : "張明勤",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/張明勤-大饒里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "8",
+         "id" : "張欣倩-議員",
+         "incumbent" : "true",
+         "name" : "張欣倩",
+         "party" : "民主進步黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/張欣倩-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "3",
+         "id" : "張淑靜-代表4區",
+         "incumbent" : "false",
+         "name" : "張淑靜",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張淑靜-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "6",
+         "id" : "張瑀瑩-代表3區",
+         "incumbent" : "true",
+         "name" : "張瑀瑩",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/張瑀瑩-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市",
+         "election_number" : "2",
+         "id" : "張裕國-市長",
+         "incumbent" : "false",
+         "name" : "張裕國",
+         "party" : "無黨籍",
+         "position" : "mayor",
+         "race" : "市長",
+         "rel" : "candidates/mayor/張裕國-市長.md",
+         "type" : "cand-mayor"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "12",
+         "id" : "張詠勝-議員",
+         "incumbent" : "true",
+         "name" : "張詠勝",
+         "party" : "中國國民黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/張詠勝-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "7",
+         "id" : "張詩怡-議員",
+         "incumbent" : "true",
+         "name" : "張詩怡",
+         "party" : "無黨籍",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/張詩怡-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "2",
+         "id" : "張雪如-議員",
+         "incumbent" : "true",
+         "name" : "張雪如",
+         "party" : "台灣民眾黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/張雪如-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "6",
+         "id" : "彭惠敏-代表4區",
+         "incumbent" : "true",
+         "name" : "彭惠敏",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/彭惠敏-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "7",
+         "id" : "徐培財-代表4區",
+         "incumbent" : "false",
+         "name" : "徐培財",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/徐培財-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "5",
+         "id" : "曹嘉豪-議員",
+         "incumbent" : "true",
+         "name" : "曹嘉豪",
+         "party" : "中國國民黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/曹嘉豪-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市三和里",
+         "election_number" : "2",
+         "id" : "曹惠纓-三和里里長",
+         "incumbent" : "false",
+         "li" : "三和里",
+         "name" : "曹惠纓",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/曹惠纓-三和里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "7",
+         "id" : "曹月碧-代表2區",
+         "incumbent" : "true",
+         "name" : "曹月碧",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/曹月碧-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市南興里",
+         "election_number" : "4",
+         "id" : "李秉鴻-南興里里長",
+         "incumbent" : "false",
+         "li" : "南興里",
+         "name" : "李秉鴻",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/李秉鴻-南興里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市萬年里",
+         "election_number" : "1",
+         "id" : "林世豪-萬年里里長",
+         "incumbent" : "false",
+         "li" : "萬年里",
+         "name" : "林世豪",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/林世豪-萬年里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "11",
+         "id" : "林俊毅-議員",
+         "incumbent" : "false",
+         "name" : "林俊毅",
+         "party" : "無黨籍",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/林俊毅-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市三多里",
+         "election_number" : "2",
+         "id" : "林子勛-三多里里長",
+         "incumbent" : "false",
+         "li" : "三多里",
+         "name" : "林子勛",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/林子勛-三多里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "1",
+         "id" : "林玟佑-代表3區",
+         "incumbent" : "true",
+         "name" : "林玟佑",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/林玟佑-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "5",
+         "id" : "林育生-代表4區",
+         "incumbent" : "true",
+         "name" : "林育生",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/林育生-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "5",
+         "id" : "林金泉-代表3區",
+         "incumbent" : "false",
+         "name" : "林金泉",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/林金泉-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市市民代表第1選舉區",
+         "election_number" : "5",
+         "id" : "江品蓉-代表1區",
+         "incumbent" : "true",
+         "name" : "江品蓉",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/江品蓉-代表1區.md",
+         "type" : "cand-rep",
+         "zone" : "1"
+      },
+      {
+         "district" : "員林市市民代表第1選舉區",
+         "election_number" : "1",
+         "id" : "江念穎-代表1區",
+         "incumbent" : "false",
+         "name" : "江念穎",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/江念穎-代表1區.md",
+         "type" : "cand-rep",
+         "zone" : "1"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "2",
+         "id" : "洪志聖-代表3區",
+         "incumbent" : "false",
+         "name" : "洪志聖",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/洪志聖-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "4",
+         "id" : "洪春美-代表2區",
+         "incumbent" : "true",
+         "name" : "洪春美",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/洪春美-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "11",
+         "id" : "洪煜婷-代表3區",
+         "incumbent" : "false",
+         "name" : "洪煜婷",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/洪煜婷-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市惠來里",
+         "election_number" : "2",
+         "id" : "游朝元-惠來里里長",
+         "incumbent" : "true",
+         "li" : "惠來里",
+         "name" : "游朝元",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/游朝元-惠來里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "1",
+         "id" : "游筑凱-議員",
+         "incumbent" : "false",
+         "name" : "游筑凱",
+         "party" : "中國國民黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/游筑凱-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "6",
+         "id" : "王勝坪-代表2區",
+         "incumbent" : "true",
+         "name" : "王勝坪",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/王勝坪-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "4",
+         "id" : "石宗凱-代表3區",
+         "incumbent" : "false",
+         "name" : "石宗凱",
+         "party" : "中國國民黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/石宗凱-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市南平里",
+         "election_number" : "2",
+         "id" : "蔡群英-南平里里長",
+         "incumbent" : "false",
+         "li" : "南平里",
+         "name" : "蔡群英",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/蔡群英-南平里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "8",
+         "id" : "許佑宇-代表3區",
+         "incumbent" : "false",
+         "name" : "許佑宇",
+         "party" : "中華文化共和黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/許佑宇-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市萬年里",
+         "election_number" : "2",
+         "id" : "許美月-萬年里里長",
+         "incumbent" : "false",
+         "li" : "萬年里",
+         "name" : "許美月",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/許美月-萬年里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "13",
+         "id" : "詹雅婷-議員",
+         "incumbent" : "false",
+         "name" : "詹雅婷",
+         "party" : "無黨籍",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/詹雅婷-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "5",
+         "id" : "謝宜芳-代表2區",
+         "incumbent" : "false",
+         "name" : "謝宜芳",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/謝宜芳-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市市民代表第1選舉區",
+         "election_number" : "2",
+         "id" : "謝淑敏-代表1區",
+         "incumbent" : "false",
+         "name" : "謝淑敏",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/謝淑敏-代表1區.md",
+         "type" : "cand-rep",
+         "zone" : "1"
+      },
+      {
+         "district" : "員林市三橋里",
+         "election_number" : "2",
+         "id" : "賴柏諺-三橋里里長",
+         "incumbent" : "true",
+         "li" : "三橋里",
+         "name" : "賴柏諺",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/賴柏諺-三橋里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "6",
+         "id" : "賴澤民-議員",
+         "incumbent" : "false",
+         "name" : "賴澤民",
+         "party" : "民主進步黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/賴澤民-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "id" : "跨縣市月票與公共運輸",
+         "rel" : "topics/跨縣市月票與公共運輸.md",
+         "type" : "topic"
+      },
+      {
+         "district" : "彰化縣",
+         "election_number" : "3",
+         "id" : "邱建富-縣長",
+         "incumbent" : "false",
+         "name" : "邱建富",
+         "party" : "無黨籍",
+         "position" : "magistrate",
+         "race" : "縣長",
+         "rel" : "candidates/magistrate/邱建富-縣長.md",
+         "type" : "cand-magistrate"
+      },
+      {
+         "district" : "員林市三橋里",
+         "election_number" : "1",
+         "id" : "邱玉雪-三橋里里長",
+         "incumbent" : "false",
+         "li" : "三橋里",
+         "name" : "邱玉雪",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/邱玉雪-三橋里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "3",
+         "id" : "邱郁文-代表3區",
+         "incumbent" : "false",
+         "name" : "邱郁文",
+         "party" : "台灣民眾黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/邱郁文-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "id" : "長者健保免費與社福",
+         "rel" : "topics/長者健保免費與社福.md",
+         "type" : "topic"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "2",
+         "id" : "陳侑興-代表2區",
+         "incumbent" : "false",
+         "name" : "陳侑興",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/陳侑興-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "員林市南興里",
+         "election_number" : "2",
+         "id" : "陳宥臻-南興里里長",
+         "incumbent" : "false",
+         "li" : "南興里",
+         "name" : "陳宥臻",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/陳宥臻-南興里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市惠來里",
+         "election_number" : "1",
+         "id" : "陳敏聰-惠來里里長",
+         "incumbent" : "false",
+         "li" : "惠來里",
+         "name" : "陳敏聰",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/陳敏聰-惠來里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第3選舉區",
+         "election_number" : "9",
+         "id" : "陳文明-代表3區",
+         "incumbent" : "true",
+         "name" : "陳文明",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/陳文明-代表3區.md",
+         "type" : "cand-rep",
+         "zone" : "3"
+      },
+      {
+         "district" : "員林市大饒里",
+         "election_number" : "1",
+         "id" : "陳淑珍-大饒里里長",
+         "incumbent" : "false",
+         "li" : "大饒里",
+         "name" : "陳淑珍",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/陳淑珍-大饒里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市南興里",
+         "election_number" : "3",
+         "id" : "陳秀鑾-南興里里長",
+         "incumbent" : "false",
+         "li" : "南興里",
+         "name" : "陳秀鑾",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/陳秀鑾-南興里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "3",
+         "id" : "陳秋蓉-議員",
+         "incumbent" : "false",
+         "name" : "陳秋蓉",
+         "party" : "民主進步黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/陳秋蓉-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "彰化縣",
+         "election_number" : "1",
+         "id" : "陳素月-縣長",
+         "incumbent" : "false",
+         "name" : "陳素月",
+         "party" : "民主進步黨",
+         "position" : "magistrate",
+         "race" : "縣長",
+         "rel" : "candidates/magistrate/陳素月-縣長.md",
+         "type" : "cand-magistrate"
+      },
+      {
+         "district" : "彰化縣",
+         "election_number" : "4",
+         "id" : "陳重嘉-縣長",
+         "incumbent" : "false",
+         "name" : "陳重嘉",
+         "party" : "無黨籍",
+         "position" : "magistrate",
+         "race" : "縣長",
+         "rel" : "candidates/magistrate/陳重嘉-縣長.md",
+         "type" : "cand-magistrate"
+      },
+      {
+         "district" : "員林市南興里",
+         "election_number" : "1",
+         "id" : "陳麗鳳-南興里里長",
+         "incumbent" : "false",
+         "li" : "南興里",
+         "name" : "陳麗鳳",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/陳麗鳳-南興里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "4",
+         "id" : "馮明仕-代表4區",
+         "incumbent" : "true",
+         "name" : "馮明仕",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/馮明仕-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "彰化縣",
+         "election_number" : "2",
+         "id" : "魏平政-縣長",
+         "incumbent" : "false",
+         "name" : "魏平政",
+         "party" : "中國國民黨",
+         "position" : "magistrate",
+         "race" : "縣長",
+         "rel" : "candidates/magistrate/魏平政-縣長.md",
+         "type" : "cand-magistrate"
+      },
+      {
+         "district" : "員林市三多里",
+         "election_number" : "1",
+         "id" : "黃再瑞-三多里里長",
+         "incumbent" : "true",
+         "li" : "三多里",
+         "name" : "黃再瑞",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/黃再瑞-三多里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第2選舉區",
+         "election_number" : "8",
+         "id" : "黃千芮-代表2區",
+         "incumbent" : "false",
+         "name" : "黃千芮",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/黃千芮-代表2區.md",
+         "type" : "cand-rep",
+         "zone" : "2"
+      },
+      {
+         "district" : "彰化縣第04選舉區（員林市、大村鄉、永靖鄉）",
+         "election_number" : "9",
+         "id" : "黃正盛-議員",
+         "incumbent" : "true",
+         "name" : "黃正盛",
+         "party" : "中國國民黨",
+         "position" : "councilor",
+         "race" : "縣議員",
+         "rel" : "candidates/councilor/黃正盛-議員.md",
+         "type" : "cand-councilor"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "1",
+         "id" : "黃瓊誼-代表4區",
+         "incumbent" : "true",
+         "name" : "黃瓊誼",
+         "party" : "無黨籍",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/黃瓊誼-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市新生里",
+         "election_number" : "1",
+         "id" : "黃耀桐-新生里里長",
+         "incumbent" : "false",
+         "li" : "新生里",
+         "name" : "黃耀桐",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/黃耀桐-新生里里長.md",
+         "type" : "cand-li-chief"
+      },
+      {
+         "district" : "員林市市民代表第4選舉區",
+         "election_number" : "8",
+         "id" : "黃金堂-代表4區",
+         "incumbent" : "false",
+         "name" : "黃金堂",
+         "party" : "民主進步黨",
+         "position" : "rep",
+         "race" : "市民代表",
+         "rel" : "candidates/rep/黃金堂-代表4區.md",
+         "type" : "cand-rep",
+         "zone" : "4"
+      },
+      {
+         "district" : "員林市三愛里",
+         "election_number" : "2",
+         "id" : "黃雅惠-三愛里里長",
+         "incumbent" : "true",
+         "li" : "三愛里",
+         "name" : "黃雅惠",
+         "party" : "無黨籍",
+         "position" : "li-chief",
+         "race" : "里長",
+         "rel" : "candidates/li-chief/黃雅惠-三愛里里長.md",
+         "type" : "cand-li-chief"
+      }
+   ]
+}
