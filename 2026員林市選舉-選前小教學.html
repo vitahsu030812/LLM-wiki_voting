@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 員林選前小教學</title>
+<!-- 由 slides/work/build_slides.pl 依 spec.md 自動產生，請勿手改 -->
+<style>
+:root{
+  --sky:#BEDEFF; --butter:#FFF2A7; --orange:#FFA500; --wine:#930031;
+  --ink:#2b1a20; --ink2:#6b5a5f; --paper:#fffdf6; --hair:#e6dccb; --track:#f3ecdc; --bg:#efe6d6; --white:#ffffff;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU","MingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);overflow:hidden}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#deck{width:1280px;height:720px;position:relative;transform-origin:center center}
+.slide{position:absolute;inset:0;background:var(--paper);border:1px solid var(--hair);padding:28px 56px 44px;display:none;flex-direction:column;overflow:hidden}
+.slide.active{display:flex}
+.mast{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;letter-spacing:.18em;color:var(--ink2);border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:12px}
+.mast b{color:var(--wine);letter-spacing:.24em}
+.folio{position:absolute;bottom:12px;left:56px;right:56px;display:flex;justify-content:space-between;gap:20px;font-size:11.5px;color:var(--ink2);border-top:1px solid var(--hair);padding-top:6px}
+.folio .pg{font-family:var(--serif);font-weight:700;color:var(--wine);font-size:14px}
+.sec{align-self:flex-start;background:var(--wine);color:var(--white);font-size:12.5px;font-weight:700;letter-spacing:.12em;padding:3px 10px;margin-bottom:6px}
+h2{font-family:var(--serif);font-size:34px;line-height:1.2;margin:0 0 14px;font-weight:900}
+.spread{flex:1;min-height:0;display:grid;grid-template-columns:6fr 4fr}
+.fig{border-right:1px solid var(--ink);padding:0 24px 0 0;display:flex;flex-direction:column;min-height:0;min-width:0}
+.txt{padding:0 0 0 24px;display:flex;flex-direction:column;min-height:0;min-width:0}
+.figcap{font-size:12px;color:var(--ink2);margin-top:8px;font-family:var(--serif)}
+ul.pts{list-style:none;margin:0;padding:0}
+ul.pts>li{position:relative;padding:7px 0 7px 22px;border-bottom:1px solid var(--hair);font-size:15.5px;line-height:1.5}
+ul.pts>li:before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;background:var(--orange)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);margin-bottom:10px;align-items:center}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-1px}
+.kicknum{font-family:var(--serif);font-size:54px;font-weight:900;color:var(--wine);line-height:1}
+.stat{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:10px}
+.stat .lab{font-size:14px;color:var(--ink2)}
+/* hbar */
+.hb{display:flex;flex-direction:column;gap:5px}
+.hb .r{display:grid;grid-template-columns:110px 1fr 140px;align-items:center;gap:10px;font-size:14px}
+.hb .tr{height:18px;background:var(--track);position:relative}
+.hb .tr.tall{height:30px}
+.hb .f{position:absolute;left:0;top:0;bottom:0;background:var(--sky)}
+.hb .r.hi .f{background:var(--wine)}
+.hb .r.hi .l{font-weight:800;color:var(--wine)}
+.hb .v{font-variant-numeric:tabular-nums;color:var(--ink2);font-size:13px;white-space:nowrap}
+.sub{margin-top:16px;border-top:1px solid var(--hair);padding-top:10px}
+/* column */
+.vc{flex:1;display:flex;align-items:flex-end;gap:20px;border-bottom:2px solid var(--ink);padding:0 8px;min-height:0;margin-bottom:30px}
+.gc{margin-bottom:30px}
+.vc .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative;padding-bottom:26px}
+.vc .bar{width:100%;background:var(--sky)} .vc .bar.hi{background:var(--wine)}
+.vc .num{font-family:var(--serif);font-size:28px;font-weight:900;margin-bottom:4px}
+.vc .cl{position:absolute;bottom:-24px;font-size:14px;font-weight:700;white-space:nowrap}
+/* grouped */
+.gc{flex:1;display:flex;gap:26px;border-bottom:2px solid var(--ink);padding:0 10px;min-height:0}
+.gc .g{flex:1;display:flex;flex-direction:column;justify-content:flex-end;position:relative;padding-bottom:26px}
+.gc .gb{flex:1;display:flex;align-items:flex-end;gap:5px}
+.gc .b{flex:1;position:relative;display:flex;justify-content:center}
+.gc .b span{position:absolute;top:-22px;font-family:var(--serif);font-weight:900;font-size:17px}
+.gc .gl{position:absolute;bottom:-24px;left:0;right:0;text-align:center;font-size:14px;font-weight:700}
+/* donut */
+.donutrow{display:flex;align-items:center;gap:28px;flex:1}
+.donut{width:260px;height:260px;border-radius:50%;position:relative;flex:none}
+.donut:after{content:"";position:absolute;inset:60px;border-radius:50%;background:var(--paper)}
+.donut .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;font-family:var(--serif)}
+.donut .c b{font-size:30px;color:var(--wine)} .donut .c span{font-size:13px;color:var(--ink2)}
+.dleg{flex:1;display:flex;flex-direction:column;gap:10px}
+.dl{display:grid;grid-template-columns:16px 70px 1fr 70px;align-items:center;gap:8px;font-size:15px;border-bottom:1px solid var(--hair);padding-bottom:6px}
+.dl i{width:14px;height:14px;display:inline-block} .dl .pc{font-family:var(--serif);font-weight:900;color:var(--wine)}
+/* stacked */
+.stk{display:flex;height:56px;border:2px solid var(--ink);margin-top:10px}
+.stk div{display:flex;align-items:center;padding-left:10px;font-weight:700;white-space:nowrap;overflow:hidden}
+.stk .dk{color:var(--white)}
+/* matrix */
+table.mx{border-collapse:collapse;width:100%;font-size:14px}
+table.mx th{font-size:12.5px;color:var(--ink2);padding:6px 4px;border-bottom:2px solid var(--ink);text-align:center}
+table.mx td{border-bottom:1px solid var(--hair);padding:9px 4px;text-align:center}
+table.mx td:first-child{text-align:left;font-family:var(--serif);font-size:18px;font-weight:900}
+.dot,.ring,.tri,.dash{display:inline-block}
+.dot{width:18px;height:18px;border-radius:50%;background:var(--wine)}
+.ring{width:18px;height:18px;border-radius:50%;border:3px solid var(--wine)}
+.tri{width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:17px solid var(--orange)}
+.dash{width:16px;height:3px;background:var(--hair);vertical-align:middle}
+.legend .dot,.legend .ring{width:12px;height:12px} .legend .ring{border-width:2px}
+.legend .tri{border-left-width:7px;border-right-width:7px;border-bottom-width:12px;width:0;height:0}
+/* timeline */
+.tl{display:grid;border-top:2px solid var(--ink)}
+.tl>div{border-bottom:1px solid var(--hair);padding:12px 6px;font-size:13.5px;display:flex;align-items:center}
+.tl .yr{font-family:var(--serif);font-weight:900;font-size:17px;justify-content:center;border-bottom:2px solid var(--ink);color:var(--wine)}
+.tl .yr.hd{justify-content:flex-start;color:var(--ink)}
+.tl .nm{font-family:var(--serif);font-weight:900;font-size:20px}
+.chip{padding:6px 8px;width:100%} .chip.w{background:var(--sky)} .chip.now{background:var(--butter);border:2px solid var(--orange);font-weight:700} .chip.none{color:var(--ink2)}
+/* units */
+.units{display:grid;gap:12px}
+.ugrp{display:flex;flex-direction:column;gap:6px}
+.ugrp h4{margin:0;font-size:14px;border-bottom:2px solid var(--ink);padding-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.ugrp h4 b{font-family:var(--serif);font-size:24px;line-height:1}
+.u{padding:8px;font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.u.dk{color:var(--white)} .u .nb{font-family:var(--serif);font-size:12.5px}
+/* directory */
+.dir{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.dir h3{font-family:var(--serif);font-size:21px;margin:0;border-bottom:2px solid var(--ink);padding-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.dir h3 small{font-family:var(--sans);font-size:12px;font-weight:400;color:var(--ink2)}
+.dir ol{list-style:none;margin:0;padding:0}
+.dir li{display:grid;grid-template-columns:28px 70px 1fr;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--hair);font-size:13.5px}
+.dir li .n{font-family:var(--serif);font-weight:900;color:var(--wine);font-size:16px}
+.dir li b{font-size:15.5px}
+.tg{font-size:11.5px;padding:1px 6px;font-weight:700;white-space:nowrap}
+.tg.inc{background:var(--wine);color:var(--white)} .tg.re{background:var(--orange)} .tg.up{background:var(--sky)} .tg.new{background:var(--butter)}
+/* li chart */
+.lic{display:flex;flex-direction:column}
+.lic .r{display:grid;grid-template-columns:58px 1fr 210px;gap:10px;align-items:center;padding:4px 0;border-bottom:1px solid var(--hair);font-size:13px}
+.lic .r.hd{font-size:11.5px;color:var(--ink2);border-bottom:2px solid var(--ink)}
+.lic .l{font-family:var(--serif);font-weight:900;font-size:15px}
+.lic .tr{height:20px;background:var(--track);position:relative}
+.lic .f{position:absolute;inset:0 auto 0 0;background:var(--sky)}
+.lic .f.out{background:var(--orange)}
+.lic .f.unc,.hatch{background:repeating-linear-gradient(45deg,var(--sky),var(--sky) 5px,var(--white) 5px,var(--white) 10px)}
+.hatch{display:inline-block;width:12px;height:12px}
+.lic .p{position:absolute;left:6px;top:2px;font-size:11.5px;color:var(--ink)}
+.lic .cand{font-size:12.5px;line-height:1.35}
+/* svg graphs */
+svg.net{width:100%;height:auto;max-height:100%;font-family:var(--sans)}
+svg .edge{fill:none;stroke:var(--orange);stroke-linecap:round}
+svg .edge.thin{stroke-width:3}
+svg .elab{font-family:var(--serif);font-weight:900;font-size:16px;fill:var(--wine);paint-order:stroke;stroke:var(--paper);stroke-width:5px}
+svg .n1{fill:var(--wine)} svg .n1t{fill:var(--white);font-size:14px;font-weight:700}
+svg .n2{fill:var(--sky)} svg .n2t{fill:var(--ink);font-size:15px;font-weight:700}
+svg .box{fill:var(--white);stroke:var(--ink);stroke-width:1}
+svg .bn{fill:var(--ink);font-size:13.5px;font-weight:700} svg .bs{fill:var(--ink2);font-size:11.5px}
+svg .hub{fill:var(--butter);stroke:var(--orange);stroke-width:3} svg .hubt{fill:var(--wine);font-size:17px;font-weight:900;font-family:var(--serif)}
+svg .colh{fill:var(--wine);font-size:14px;font-weight:700;letter-spacing:.1em}
+svg .e-wine{stroke:var(--wine);opacity:.8} svg .e-orange{stroke:var(--orange)} svg .e-sky{stroke:var(--sky)}
+svg .t-wine{fill:var(--wine)} svg .t-orange{fill:var(--orange)} svg .t-sky{fill:var(--sky);stroke:var(--ink);stroke-width:.5}
+svg .tt-wine{fill:var(--white);font-size:14px;font-weight:700} svg .tt-orange,svg .tt-sky{fill:var(--ink);font-size:14px;font-weight:700}
+/* checklist */
+.ck{display:grid;grid-template-rows:repeat(3,1fr);gap:12px;flex:1}
+.ck>div{display:grid;grid-template-columns:100px 1fr;align-items:center}
+.ck .kicknum{text-align:center}
+.ck b{display:block;font-family:var(--serif);font-size:24px} .ck small{font-size:14px;color:var(--ink2)}
+/* cover */
+.cover{background:var(--sky)}
+.cover .bigt{font-family:var(--serif);font-weight:900;font-size:112px;line-height:.95;color:var(--wine);margin:10px 0 6px}
+.cover .bigt span{display:block;font-size:50px;line-height:1.2;color:var(--ink);margin-top:36px}
+.cover .ribbon{align-self:flex-start;background:var(--wine);color:var(--white);font-family:var(--serif);font-size:26px;font-weight:900;padding:10px 20px;margin-top:14px}
+.cover .claim{font-family:var(--serif);font-size:18px;max-width:640px;margin:18px 0 0}
+.cover .lines{position:absolute;right:56px;top:96px;width:340px;background:var(--paper);padding:18px 22px;border-top:8px solid var(--orange)}
+.cover .lines h5{margin:0 0 6px;font-size:12px;letter-spacing:.2em;color:var(--wine)}
+.cover .ln{font-family:var(--serif);font-size:18px;font-weight:700;padding:8px 0;border-bottom:1px solid var(--hair);display:flex;gap:12px;align-items:baseline}
+.cover .ln i{font-style:normal;font-size:26px;color:var(--wine);font-weight:900;min-width:44px}
+.cover .ln:first-of-type i{font-size:16px}
+.cover .fine{position:absolute;left:56px;bottom:46px;margin:0;padding:0;list-style:none;font-size:13px;line-height:1.7}
+/* nav */
+#nav{position:fixed;bottom:14px;right:18px;display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink2);z-index:5}
+#nav button{font:inherit;border:1px solid var(--wine);background:var(--paper);color:var(--wine);padding:6px 12px;cursor:pointer}
+#nav button:hover{background:var(--butter)}
+#progress{position:fixed;top:0;left:0;height:4px;background:var(--orange);z-index:5}
+#toc{position:fixed;top:12px;left:16px;z-index:5}
+#toc select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--wine);background:var(--paper);color:var(--ink);max-width:260px}
+@media (max-width:820px){
+  body{overflow:auto}
+  #stage{position:static;display:block;padding:12px 16px 40px}
+  #deck{width:auto;height:auto;transform:none!important}
+  .slide{position:relative;display:flex!important;padding:20px 16px 16px;margin-bottom:16px}
+  h2{font-size:24px}
+  .spread{grid-template-columns:1fr;gap:18px}
+  .fig{border:none;padding:0} .txt{padding:0}
+  .units{grid-template-columns:1fr 1fr!important}
+  .dir{grid-template-columns:1fr}
+  .hb .r{grid-template-columns:70px 1fr 100px;font-size:12.5px}
+  .lic .r{grid-template-columns:48px 1fr} .lic .cand{grid-column:1/-1}
+  .donutrow{flex-direction:column;align-items:stretch} .donut{width:200px;height:200px;margin:0 auto} .donut:after{inset:46px}
+  .tl>div{font-size:11.5px;padding:6px 3px} .tl .nm{font-size:15px}
+  .vc{min-height:220px;gap:8px;padding:0 2px} .gc{min-height:220px;gap:10px}
+  .vc .cl{white-space:normal;font-size:11px;text-align:center;width:100%;bottom:-30px;line-height:1.2}
+  .vc .num{font-size:20px}
+  .ck{grid-template-rows:none;flex:none} .ck>div{grid-template-columns:64px 1fr;padding:12px 8px} .ck .kicknum{font-size:36px} .ck b{font-size:18px}
+  .cover .bigt{font-size:60px} .cover .bigt span{font-size:28px}
+  .cover .lines,.cover .fine{position:static;width:auto;margin-top:16px}
+  .folio{position:static;margin-top:16px;flex-direction:column}
+  #nav,#progress,#toc{display:none}
+}
+@media print{
+  @page{size:1280px 720px;margin:0}
+  body{background:var(--white);overflow:visible;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  #stage{position:static;display:block} #deck{transform:none!important;height:auto}
+  .slide{display:flex!important;position:relative;width:1280px;height:720px;break-after:page}
+  #nav,#progress,#toc{display:none}
+  .qz details{display:block} .qz details>*{display:block}
+}
+/* 教學：學習目標、小測驗 */
+.goals{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;flex:1;justify-content:center;counter-reset:g}
+.goals li{display:grid;grid-template-columns:72px 1fr;align-items:center;background:var(--sky);padding:14px 18px;counter-increment:g}
+.goals .kicknum:before{content:counter(g)}
+.goals.dense{gap:7px} .goals.dense li{padding:7px 16px;grid-template-columns:56px 1fr} .goals.dense .kicknum{font-size:34px} .goals.dense b{font-size:18px}
+.goals li:nth-child(2){background:var(--butter)} .goals li:nth-child(3){background:var(--track)}
+.goals small{display:block;font-size:12.5px;letter-spacing:.14em;color:var(--ink2)}
+.goals b{display:block;font-family:var(--serif);font-size:22px;line-height:1.35}
+.qz{display:flex;flex-direction:column;gap:12px;flex:1;min-height:0}
+.qz .qtag{align-self:flex-start;background:var(--orange);color:var(--ink);font-weight:800;font-size:13px;letter-spacing:.14em;padding:3px 10px}
+.qz .q{font-family:var(--serif);font-size:26px;font-weight:900;line-height:1.35;margin:0}
+.qz .opts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.qz .opts li{display:flex;gap:10px;align-items:center;border:1px solid var(--hair);background:var(--white);padding:10px 12px;font-size:17px}
+.qz .opts b{font-family:var(--serif);color:var(--wine);font-size:20px}
+.qz details{border-top:2px solid var(--ink);padding-top:8px}
+.qz summary{cursor:pointer;font-weight:800;color:var(--wine);font-size:15px}
+.qz details p{margin:6px 0 0;font-size:16px;line-height:1.5}
+@media (max-width:820px){ .goals b{font-size:17px} .goals li{grid-template-columns:48px 1fr} .qz .q{font-size:20px} .qz .opts{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="toc"><select id="tocSel" aria-label="跳至投影片"></select></div>
+<div id="stage"><div id="deck">
+<section class="slide cover" data-id="S01" data-title="封面">
+  <div class="mast"><b>員林選前小教學</b><span>開場</span><span>S01</span></div>
+  <div class="bigt">選前<br>小教學<span>2026 員林市地方選舉</span></div>
+  <div class="ribbon">投票日 2026-11-28</div>
+  <p class="claim">6 課、約 18 分鐘，投票前學會看懂選票與查證政見</p>
+  <div class="lines"><h5>課程內容</h5><div class="ln"><i>6</i>課</div><div class="ln"><i>18</i>分鐘</div><div class="ln"><i>5</i>張地方選舉選票</div></div>
+  <ul class="fine"><li>只教制度與方法，不代表支持任何候選人</li><li>法規說法都附條號，資料截至 2026-11-15</li><li>想查個別候選人，請看選民參考簡報</li></ul>
+  <div class="folio"><span>資料來源：中選會 115-08-20 選舉公告；地方制度法；公職人員選舉罷免法</span><span class="pg">01</span></div>
+</section>
+<section class="slide" data-id="S02" data-title="學習路徑">
+  <div class="mast"><b>開場</b><span>員林選前小教學</span><span>S02</span></div>
+  <span class="sec">學習路徑</span>
+  <h2>從選票、職位、計票，一路學到讀政見、查承諾、去投票</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals dense"><li><span class="kicknum"></span><div><small>第1課</small><b>一次投五張票</b></div></li><li><span class="kicknum"></span><div><small>第2課</small><b>五種職位做什麼</b></div></li><li><span class="kicknum"></span><div><small>第3課</small><b>選票怎麼算</b></div></li><li><span class="kicknum"></span><div><small>第4課</small><b>怎麼讀政見</b></div></li><li><span class="kicknum"></span><div><small>第5課</small><b>怎麼追蹤承諾</b></div></li><li><span class="kicknum"></span><div><small>第6課</small><b>投票日實務</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>每課固定：學習目標、概念、員林實例、小測驗</li><li>每課結尾一題小測驗，答案收在「看答案」</li><li>六課合計約 18 分鐘</li><li>課程只考制度與方法，不考投給誰</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈課程地圖〉</span><span class="pg">02</span></div>
+</section>
+<section class="slide" data-id="S03" data-title="第1課：學習目標">
+  <div class="mast"><b>第1課</b><span>員林選前小教學</span><span>S03</span></div>
+  <span class="sec">第1課：學習目標</span>
+  <h2>第1課：員林市民這次一次投五張票</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出員林市民這次拿到的 5 張地方選舉選票</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出投票日期與投票時間</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>投票日：2026-11-28（星期六）</li><li>投票時間：上午 8 時至下午 4 時</li><li>同一天另有全國性公民投票，那是另一張票</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會 115-08-20 選舉公告；公視新聞網 2026-11-09</span><span class="pg">03</span></div>
+</section>
+<section class="slide" data-id="S04" data-title="五張選票">
+  <div class="mast"><b>第1課</b><span>員林選前小教學</span><span>S04</span></div>
+  <span class="sec">五張選票</span>
+  <h2>五張票各選一種職位，每一張各自獨立</h2>
+  <div class="spread">
+    <div class="fig"><div class="vc"><div class="col"><span class="num">4</span><div class="bar" style="height:9.8%"></div><span class="cl">縣長</span></div><div class="col"><span class="num">13</span><div class="bar" style="height:31.7%"></div><span class="cl">縣議員</span></div><div class="col"><span class="num">3</span><div class="bar" style="height:7.3%"></div><span class="cl">市長</span></div><div class="col"><span class="num">32</span><div class="bar hi" style="height:78.0%"></div><span class="cl">市民代表</span></div><div class="col"><span class="num">23</span><div class="bar" style="height:56.1%"></div><span class="cl">里長</span></div></div><div class="figcap">長條為員林市民可投的候選人人數（市民代表為 4 區合計、里長為前十大人口里合計）</div></div>
+    <div class="txt"><ul class="pts"><li>縣長管全彰化縣，市長只管員林市，是兩張票</li><li>縣議員選區：員林市、大村鄉、永靖鄉</li><li>市民代表、里長只拿自己選區、自己里那一張</li><li>每張票各自獨立，可以分別判斷</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會 2026 候選人公告（本 wiki〈2026年候選人彙整〉）</span><span class="pg">04</span></div>
+</section>
+<section class="slide" data-id="S05" data-title="第1課：小測驗">
+  <div class="mast"><b>第1課</b><span>員林選前小教學</span><span>S05</span></div>
+  <span class="sec">第1課：小測驗</span>
+  <h2>小測驗：員林市民這次拿到幾張地方選舉選票？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">員林市民這次會拿到幾張地方選舉選票？</p><ol class="opts"><li><b>A</b><span>3 張</span></li><li><b>B</b><span>4 張</span></li><li><b>C</b><span>5 張</span></li><li><b>D</b><span>9 張</span></li></ol><details class="ans"><summary>看答案</summary><p><b>答案：</b>(C) 5 張</p><p>縣長、縣議員、市長、市民代表、里長。公投是另一張票，不算在內。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：縣長和市長是同一張票嗎？</li><li>延伸題：五張票要投給同一個政黨嗎？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第1課：一次投五張票〉</span><span class="pg">05</span></div>
+</section>
+<section class="slide" data-id="S06" data-title="第2課：學習目標">
+  <div class="mast"><b>第2課</b><span>員林選前小教學</span><span>S06</span></div>
+  <span class="sec">第2課：學習目標</span>
+  <h2>第2課：分清楚誰負責做事、誰負責監督</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能分辨行政首長（縣長、市長）和民意代表（縣議員、市民代表）的工作</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出議會的三個主要權力：審預算、訂規章、質詢監督</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出里長的角色與任期規定</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>縣：縣長做事，縣議會監督</li><li>市：市長做事，市民代表會監督</li><li>里：里長受市長指揮監督</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：地方制度法（114-12-03 修正）</span><span class="pg">06</span></div>
+</section>
+<section class="slide" data-id="S07" data-title="行政與議會">
+  <div class="mast"><b>第2課</b><span>員林選前小教學</span><span>S07</span></div>
+  <span class="sec">行政與議會</span>
+  <h2>首長負責做事，議會負責審預算、訂規章與監督</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>縣長（行政）</small><b>綜理縣政</b></div></li><li><span class="kicknum"></span><div><small>市長（行政）</small><b>綜理市政</b></div></li><li><span class="kicknum"></span><div><small>縣議會、市民代表會</small><b>議決縣（市）預算</b></div></li><li><span class="kicknum"></span><div><small>縣議會、市民代表會</small><b>議員、代表有質詢之權</b></div></li><li><span class="kicknum"></span><div><small>里長</small><b>受市長指揮監督，辦理里公務及交辦事項</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>政府要花的錢，議會同意才能用（第36條）</li><li>議員、代表靠審預算、提案、質詢推動事情</li><li>執行建設的是縣府、市公所</li><li>里長由里民選出，不是市長派任（第59條）</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：地方制度法第36、37、48、56、57、59條（114-12-03 修正）</span><span class="pg">07</span></div>
+</section>
+<section class="slide" data-id="S08" data-title="任期與連任">
+  <div class="mast"><b>第2課</b><span>員林選前小教學</span><span>S08</span></div>
+  <span class="sec">任期與連任</span>
+  <h2>五種職位任期都是四年，縣長與市長最多連續兩屆</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>任期</small><b>五種職位任期都是 4 年</b></div></li><li><span class="kicknum"></span><div><small>縣長、市長</small><b>連選得連任一屆（最多連續做兩屆）</b></div></li><li><span class="kicknum"></span><div><small>縣議員、市民代表、里長</small><b>連選得連任（法條未限屆數）</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>員林市是彰化縣的縣轄市</li><li>這次選的是第四屆員林市長</li><li>上一屆市長任內辭世，目前由代理市長代理</li><li>首長出缺時，市政仍要有人綜理</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：地方制度法第33、56、57、59條；本 wiki〈2022年選舉結果〉</span><span class="pg">08</span></div>
+</section>
+<section class="slide" data-id="S09" data-title="第2課：小測驗">
+  <div class="mast"><b>第2課</b><span>員林選前小教學</span><span>S09</span></div>
+  <span class="sec">第2課：小測驗</span>
+  <h2>小測驗：縣預算要誰同意才能執行？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">彰化縣的年度預算要誰同意才能執行？</p><ol class="opts"><li><b>A</b><span>縣長</span></li><li><b>B</b><span>縣議會</span></li><li><b>C</b><span>市長</span></li><li><b>D</b><span>里長</span></li></ol><details class="ans"><summary>看答案</summary><p><b>答案：</b>(B) 縣議會</p><p>議決縣預算是縣議會的職權（第36條）。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：縣長可以無限次連任嗎？</li><li>延伸題：員林市長由哪個機關審預算、監督？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：地方制度法第36條</span><span class="pg">09</span></div>
+</section>
+<section class="slide" data-id="S10" data-title="第3課：學習目標">
+  <div class="mast"><b>第3課</b><span>員林選前小教學</span><span>S10</span></div>
+  <span class="sec">第3課：學習目標</span>
+  <h2>第3課：看懂一人當選與多人當選</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能分辨「一人當選」和「多人當選」的選舉</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出每張票只能圈一人，圈兩人以上是無效票</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能用員林過去的票數差距，說明每一票的影響</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>一人當選：縣長、市長、里長</li><li>多人當選：縣議員、市民代表</li><li>不需過半，得票比較多數者當選</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第63、64、67條（115-07-01 修正）</span><span class="pg">10</span></div>
+</section>
+<section class="slide" data-id="S11" data-title="每票只能圈一人">
+  <div class="mast"><b>第3課</b><span>員林選前小教學</span><span>S11</span></div>
+  <span class="sec">每票只能圈一人</span>
+  <h2>應選幾席都一樣，每張票只能圈一人</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>怎麼圈</small><b>圈選一人</b></div></li><li><span class="kicknum"></span><div><small>一人當選</small><b>只有一席，最高票者當選</b></div></li><li><span class="kicknum"></span><div><small>多人當選</small><b>你還是只能圈一人</b></div></li><li><span class="kicknum"></span><div><small>縣議員第04選舉區 應選席次</small><b>9</b></div></li><li><span class="kicknum"></span><div><small>縣議員第04選舉區 候選人</small><b>13</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>應選 9 席，你的票還是只能圈一人</li><li>圈二人以上是無效票（第64條）</li><li>依應選名額，取得票最高的前幾名</li><li>2022 年同選區應選 8 席</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第63、64、67條；本 wiki〈2026年候選人彙整〉〈2022年選舉結果〉</span><span class="pg">11</span></div>
+</section>
+<section class="slide" data-id="S12" data-title="每一票的分量">
+  <div class="mast"><b>第3課</b><span>員林選前小教學</span><span>S12</span></div>
+  <span class="sec">每一票的分量</span>
+  <h2>2022 年員林有選區，最後一席只差 17 票</h2>
+  <div class="spread">
+    <div class="fig"><div class="hb"><div class="r hi"><span class="l">市長</span><span class="tr"><span class="f" style="width:100.0%"></span></span><span class="v">982</span></div><div class="r "><span class="l">縣議員</span><span class="tr"><span class="f" style="width:26.7%"></span></span><span class="v">262</span></div><div class="r "><span class="l">市民代表</span><span class="tr"><span class="f" style="width:1.7%"></span></span><span class="v">17</span></div></div><div class="figcap">長條為最後一席與下一名的票數差距</div></div>
+    <div class="txt"><ul class="pts"><li>市長：當選與次高票差 982 票</li><li>縣議員（第04選舉區）：第 8 席與第 9 名差 262 票</li><li>市民代表（第3選舉區）：第 6 席與第 7 名差 17 票</li><li>一票就可能改變最後一席</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：中選會選舉及公投資料庫（本 wiki〈2022年選舉結果〉）</span><span class="pg">12</span></div>
+</section>
+<section class="slide" data-id="S13" data-title="第3課：小測驗">
+  <div class="mast"><b>第3課</b><span>員林選前小教學</span><span>S13</span></div>
+  <span class="sec">第3課：小測驗</span>
+  <h2>小測驗：應選 9 席，你的選票可以圈幾位？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">縣議員第04選舉區應選 9 席，你的選票可以圈幾位？</p><ol class="opts"><li><b>A</b><span>1 位</span></li><li><b>B</b><span>2 位</span></li><li><b>C</b><span>9 位</span></li><li><b>D</b><span>13 位</span></li></ol><details class="ans"><summary>看答案</summary><p><b>答案：</b>(A) 1 位</p><p>圈二人以上是無效票（第63、64條）。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：哪一種是多人當選的選舉？</li><li>延伸題：要得票過半才能當選嗎？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第63、64條</span><span class="pg">13</span></div>
+</section>
+<section class="slide" data-id="S14" data-title="第4課：學習目標">
+  <div class="mast"><b>第4課</b><span>員林選前小教學</span><span>S14</span></div>
+  <span class="sec">第4課：學習目標</span>
+  <h2>第4課：用具體五問讀懂一則政見</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能用「具體五問」檢查一則政見</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能判斷一則政見是否在該職位的職權範圍內</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>具體五問：誰、做什麼、何時、多少錢、怎麼驗證</li><li>再加一問：這是該職位的職權嗎？</li><li>本課只教方法，不替任何政見打分數</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第4課：怎麼讀政見〉；地方制度法第36、37、48條</span><span class="pg">14</span></div>
+</section>
+<section class="slide" data-id="S15" data-title="具體五問">
+  <div class="mast"><b>第4課</b><span>員林選前小教學</span><span>S15</span></div>
+  <span class="sec">具體五問</span>
+  <h2>讀政見先問五題，答得出來越多，選後越能檢查</h2>
+  <div class="spread">
+    <div class="fig"><div class="ck" style="grid-template-rows:repeat(5,1fr)"><div style="background:var(--sky)"><span class="kicknum">一</span><div><b>誰負責？</b><small>縣府交通處、市公所</small></div></div><div style="background:var(--butter)"><span class="kicknum">二</span><div><b>做什麼？</b><small>新增公車路線、改善排水</small></div></div><div style="background:var(--orange)"><span class="kicknum">三</span><div><b>何時完成？</b><small>任期內、某一年以前</small></div></div><div style="background:var(--sky)"><span class="kicknum">四</span><div><b>多少錢、從哪來？</b><small>預算金額、中央補助或地方自籌</small></div></div><div style="background:var(--butter)"><span class="kicknum">五</span><div><b>怎麼驗證？</b><small>完工公告、路線公告、預算書</small></div></div></div></div>
+    <div class="txt"><ul class="pts"><li>例句甲「我會讓交通更好」：五問幾乎答不出</li><li>例句乙：寫明單位、時程、預算與驗證方式</li><li>練習素材：月票、排水、長者健保三個議題頁</li><li>答不出來的問題，就是可以追問的地方</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第4課：怎麼讀政見〉與三個議題頁</span><span class="pg">15</span></div>
+</section>
+<section class="slide" data-id="S16" data-title="第4課：小測驗">
+  <div class="mast"><b>第4課</b><span>員林選前小教學</span><span>S16</span></div>
+  <span class="sec">第4課：小測驗</span>
+  <h2>小測驗：「我會讓交通更好」最缺少什麼？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">例句「我會讓交通更好」最缺少什麼？</p><details class="ans"><summary>看答案</summary><p><b>答案：</b>缺少負責單位、時程、經費與驗證方式</p><p>五問幾乎都答不出來。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：具體五問不包括哪一項？</li><li>延伸題：市民代表能影響市公所施政嗎？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第4課：怎麼讀政見〉</span><span class="pg">16</span></div>
+</section>
+<section class="slide" data-id="S17" data-title="第5課：學習目標">
+  <div class="mast"><b>第5課</b><span>員林選前小教學</span><span>S17</span></div>
+  <span class="sec">第5課：學習目標</span>
+  <h2>第5課：用公開資料查證一則承諾</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出兌現度的五個等級與評分原則</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出三種查證管道：選舉公報、政府公告與議事紀錄、新聞報導</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>步驟一：從選舉公報找到原始承諾</li><li>步驟二：找第三方證據</li><li>步驟三：依準則評分</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第5課：怎麼追蹤承諾〉、AGENTS.md 第九章</span><span class="pg">17</span></div>
+</section>
+<section class="slide" data-id="S18" data-title="兌現度怎麼評">
+  <div class="mast"><b>第5課</b><span>員林選前小教學</span><span>S18</span></div>
+  <span class="sec">兌現度怎麼評</span>
+  <h2>評分要有第三方佐證，資訊不足就標無法核查</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>100%</small><b>完全實現，有具體佐證</b></div></li><li><span class="kicknum"></span><div><small>50–99%</small><b>部分實現或進行中，有具體進度可追蹤</b></div></li><li><span class="kicknum"></span><div><small>1–49%</small><b>有啟動但進展有限</b></div></li><li><span class="kicknum"></span><div><small>0%</small><b>任期結束仍無具體行動</b></div></li><li><span class="kicknum"></span><div><small>❓</small><b>公開資訊不足，無法判斷</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>不能只看候選人自己說做到了</li><li>查證管道：選舉公報、政府公告與議事錄、新聞</li><li>建設完成，不等於某一位民代的承諾兌現</li><li>本課不轉載個別候選人的分數</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki AGENTS.md 第九章「政見兌現率評分準則」</span><span class="pg">18</span></div>
+</section>
+<section class="slide" data-id="S19" data-title="第5課：小測驗">
+  <div class="mast"><b>第5課</b><span>員林選前小教學</span><span>S19</span></div>
+  <span class="sec">第5課：小測驗</span>
+  <h2>小測驗：只有候選人自己說已完成，該怎麼標？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">某項承諾只有候選人自己的貼文說「已完成」，沒有其他資料。依準則應該怎麼標？</p><details class="ans"><summary>看答案</summary><p><b>答案：</b>❓ 無法核查</p><p>準則規定不得只憑候選人本身說法給分。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：四年前的承諾去哪裡查最可靠？</li><li>延伸題：建設蓋好了，提過的人都兌現了嗎？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈第5課：怎麼追蹤承諾〉</span><span class="pg">19</span></div>
+</section>
+<section class="slide" data-id="S20" data-title="第6課：學習目標">
+  <div class="mast"><b>第6課</b><span>員林選前小教學</span><span>S20</span></div>
+  <span class="sec">第6課：學習目標</span>
+  <h2>第6課：準備好證件，避開無效票與違規</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals"><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能說出投票資格與要帶的東西</b></div></li><li><span class="kicknum"></span><div><small>學習目標</small><b>學完能避開無效票與投票所內的違規行為</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>資格：年滿 20 歲、在選舉區居住 4 個月以上</li><li>時間：上午 8 時至下午 4 時</li><li>4 時前已到場排隊、還沒投的人仍可投票</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第4、14、15、19條；中選會 115-08-20 選舉公告</span><span class="pg">20</span></div>
+</section>
+<section class="slide" data-id="S21" data-title="證件與圈票">
+  <div class="mast"><b>第6課</b><span>員林選前小教學</span><span>S21</span></div>
+  <span class="sec">證件與圈票</span>
+  <h2>帶國民身分證，每張票用圈選工具圈一人</h2>
+  <div class="spread">
+    <div class="fig"><div class="ck" style="grid-template-rows:repeat(5,1fr)"><div style="background:var(--sky)"><span class="kicknum">一</span><div><b>身分證？</b><small>必帶，憑本人國民身分證領票</small></div></div><div style="background:var(--butter)"><span class="kicknum">二</span><div><b>印章？</b><small>沒帶也可以簽名或按指印</small></div></div><div style="background:var(--orange)"><span class="kicknum">三</span><div><b>怎麼圈？</b><small>用選委會的圈選工具，每張圈一人</small></div></div><div style="background:var(--sky)"><span class="kicknum">四</span><div><b>手機？</b><small>關閉電源才能帶進投票所</small></div></div><div style="background:var(--butter)"><span class="kicknum">五</span><div><b>圈完了？</b><small>不得將圈選內容出示他人</small></div></div></div></div>
+    <div class="txt"><ul class="pts"><li>圈二人以上、塗改、加字，都會變無效票</li><li>不用選委會的圈選工具，也是無效票</li><li>選票不可帶出投票所，會受處罰</li><li>中選會提醒：注意 AI 深偽影音，先查證再轉傳</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第18、63、64、65、108條；公視新聞網 2026-11-09</span><span class="pg">21</span></div>
+</section>
+<section class="slide" data-id="S22" data-title="第6課：小測驗">
+  <div class="mast"><b>第6課</b><span>員林選前小教學</span><span>S22</span></div>
+  <span class="sec">第6課：小測驗</span>
+  <h2>小測驗：領選票一定要帶的是哪一樣？</h2>
+  <div class="spread">
+    <div class="fig"><div class="qz"><span class="qtag">小測驗</span><p class="q">領選票一定要帶的是？</p><ol class="opts"><li><b>A</b><span>健保卡</span></li><li><b>B</b><span>國民身分證</span></li><li><b>C</b><span>投票通知單</span></li><li><b>D</b><span>印章</span></li></ol><details class="ans"><summary>看答案</summary><p><b>答案：</b>(B) 國民身分證</p><p>印章可用簽名或按指印代替。</p></details></div></div>
+    <div class="txt"><ul class="pts"><li>先想再看：答案收在「看答案」</li><li>延伸題：快 4 時才到投票所，還能投嗎？</li><li>延伸題：在選票上寫「加油」可以嗎？</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第18條</span><span class="pg">22</span></div>
+</section>
+<section class="slide" data-id="S23" data-title="出門前檢查清單">
+  <div class="mast"><b>收尾</b><span>員林選前小教學</span><span>S23</span></div>
+  <span class="sec">出門前檢查清單</span>
+  <h2>出門前對一遍清單，下午四點前到投票所</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals dense"><li><span class="kicknum"></span><div><small>證件</small><b>國民身分證</b></div></li><li><span class="kicknum"></span><div><small>簽名</small><b>印章（或準備簽名）</b></div></li><li><span class="kicknum"></span><div><small>核對</small><b>投票通知單</b></div></li><li><span class="kicknum"></span><div><small>手機</small><b>手機關機或不帶</b></div></li><li><span class="kicknum"></span><div><small>選票</small><b>想好 5 張票各要圈誰</b></div></li><li><span class="kicknum"></span><div><small>時間</small><b>下午 4 點前抵達投票所</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>投票日：2026-11-28（星期六）</li><li>投票所以選委會公告為準</li><li>每張票各圈一人，投入對應的票匭</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：公職人員選舉罷免法第18、65條；中選會 115-08-20 選舉公告</span><span class="pg">23</span></div>
+</section>
+<section class="slide" data-id="S24" data-title="下一步">
+  <div class="mast"><b>收尾</b><span>員林選前小教學</span><span>S24</span></div>
+  <span class="sec">下一步</span>
+  <h2>學會方法後，到資料庫查每一位候選人</h2>
+  <div class="spread">
+    <div class="fig"><ol class="goals dense"><li><span class="kicknum"></span><div><small>候選人名冊</small><b>2026年候選人彙整</b></div></li><li><span class="kicknum"></span><div><small>歷屆結果</small><b>2022年選舉結果</b></div></li><li><span class="kicknum"></span><div><small>在地議題</small><b>員林排水與淹水改善</b></div></li><li><span class="kicknum"></span><div><small>在地議題</small><b>跨縣市月票與公共運輸</b></div></li><li><span class="kicknum"></span><div><small>在地議題</small><b>長者健保免費與社福</b></div></li><li><span class="kicknum"></span><div><small>依號次排列的總整理</small><b>選民參考簡報</b></div></li></ol></div>
+    <div class="txt"><ul class="pts"><li>選民參考簡報：候選人依號次、同版面排列</li><li>待開課：公投、開票、假訊息、選後監督</li><li>課程只教方法，不代表支持任何候選人</li></ul></div>
+  </div>
+  <div class="folio"><span>資料來源：本 wiki〈課程地圖〉</span><span class="pg">24</span></div>
+</section>
+</div></div>
+<div id="nav"><button id="prev" aria-label="上一張">‹ 上一張</button><span id="count"></span><button id="next" aria-label="下一張">下一張 ›</button></div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var slides=[].slice.call(document.querySelectorAll('.slide')),deck=$('deck'),i=0,sel=$('tocSel');
+  slides.forEach(function(s,k){var o=document.createElement('option');o.value=k;o.textContent=(k+1)+'. '+s.dataset.title;sel.appendChild(o)});
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    $('count').textContent=(i+1)+' / '+slides.length;$('progress').style.width=((i+1)/slides.length*100)+'%';sel.value=i;
+    try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+  function fit(){deck.style.transform='scale('+Math.min(innerWidth/1320,innerHeight/770)+')'}
+  $('prev').onclick=function(){show(i-1)};$('next').onclick=function(){show(i+1)};
+  sel.onchange=function(){show(+sel.value);sel.blur()};
+  document.addEventListener('keydown',function(e){if(e.target===sel)return;
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();show(i+1)}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();show(i-1)}
+    else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1)});
+  deck.addEventListener('click',function(e){if(innerWidth<=820)return;var r=deck.getBoundingClientRect(),x=e.clientX-r.left;
+    if(x<r.width*.2)show(i-1);else if(x>r.width*.8)show(i+1)});
+  var tx=null;document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){if(tx===null||innerWidth<=820)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(i+(dx<0?1:-1));tx=null});
+  addEventListener('resize',fit);fit();var h=parseInt((location.hash||'').slice(1),10);show(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
